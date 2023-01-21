@@ -1,9 +1,9 @@
-import React from "react";
-import Banner from "../banner";
-import Services from "../services";
-import GetCallBack from "../getCallBack";
-import { Grid } from "@mui/material";
-import Showcase from "../showcase";
+import React from 'react';
+import { Grid } from '@mui/material';
+import Banner from '../banner';
+import Services from '../services';
+import GetCallBack from '../getCallBack';
+import Showcase from '../showcase';
 
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
         <Services home />
       </Grid>
       <Grid item xs={12}>
-        <GetCallBack home m={0}/>
+        <GetCallBack home m={0} />
       </Grid>
     </Grid>
   );

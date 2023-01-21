@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import map from "./images/map.jpg";
+import styled from '@emotion/styled';
+import map from './images/map.jpg';
 
 export const FooterStyle = styled('div')`
     width: 100%;

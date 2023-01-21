@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   Grid,
   Typography,
   Button,
   TextField,
   FormHelperText,
-} from "@mui/material";
-import { Box } from "@mui/system";
-import Fab from "@mui/material/Fab";
-import AddIcon from "@mui/icons-material/Add";
-import { useFormik } from "formik";
-import * as yup from "yup";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+} from '@mui/material';
+import { Box } from '@mui/system';
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
+import { useFormik } from 'formik';
+import * as yup from 'yup';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
-const data = ["facebook", "instagrem"];
+const data = ['facebook', 'instagrem'];
 
-const AddSocialNetworktitems = ({ auth, language }) => {
+function AddSocialNetworktitems({ auth, language }) {
   const [switchState, setSwitchState] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -32,21 +32,21 @@ const AddSocialNetworktitems = ({ auth, language }) => {
 
   const validationSchema = yup.object({
     socialNetwork: yup
-      .string("Enter your social network")
-      .min(1, "social network should be of minimum 1 characters length")
-      .required("social network is required"),
+      .string('Enter your social network')
+      .min(1, 'social network should be of minimum 1 characters length')
+      .required('social network is required'),
     url: yup
-      .string("Enter your url")
-      .url("Enter a valid url")
-      .required("url is required"),
+      .string('Enter your url')
+      .url('Enter a valid url')
+      .required('url is required'),
   });
 
   const formik = useFormik({
     initialValues: {
-      socialNetwork: "",
-      url: "",
+      socialNetwork: '',
+      url: '',
     },
-    validationSchema: validationSchema,
+    validationSchema,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
@@ -55,31 +55,29 @@ const AddSocialNetworktitems = ({ auth, language }) => {
   const handelClick = (param) => {
     setSwitchState(!switchState);
 
-    if (param === "cancel") {
-      formik.values.socialNetwork = "";
-      formik.values.url = "";
-      formik.errors.socialNetwork = "";
-      formik.errors.url = "";
-      formik.touched.socialNetwork = "";
-      formik.touched.url = "";
+    if (param === 'cancel') {
+      formik.values.socialNetwork = '';
+      formik.values.url = '';
+      formik.errors.socialNetwork = '';
+      formik.errors.url = '';
+      formik.touched.socialNetwork = '';
+      formik.touched.url = '';
     }
   };
 
-  const menuItemArr = data.map((index) => {
-    return (
-      <MenuItem value={index} key={index}>
-        {index}
-      </MenuItem>
-    );
-  });
+  const menuItemArr = data.map((index) => (
+    <MenuItem value={index} key={index}>
+      {index}
+    </MenuItem>
+  ));
 
   const formForAdd = (
     <Box
       sx={{
-        background: "white",
-        padding: "16px",
-        borderRadius: "5px",
-        maxWidth: "200px",
+        background: 'white',
+        padding: '16px',
+        borderRadius: '5px',
+        maxWidth: '200px',
       }}
     >
       <form onSubmit={formik.handleSubmit}>
@@ -89,8 +87,8 @@ const AddSocialNetworktitems = ({ auth, language }) => {
               <InputLabel
                 size="small"
                 error={
-                  Boolean(formik.touched.socialNetwork) &&
-                  Boolean(formik.errors.socialNetwork)
+                  Boolean(formik.touched.socialNetwork)
+                  && Boolean(formik.errors.socialNetwork)
                 }
               >
                 social network
@@ -104,8 +102,8 @@ const AddSocialNetworktitems = ({ auth, language }) => {
                 onOpen={handleOpen}
                 value={formik.values.socialNetwork}
                 error={
-                  Boolean(formik.touched.socialNetwork) &&
-                  Boolean(formik.errors.socialNetwork)
+                  Boolean(formik.touched.socialNetwork)
+                  && Boolean(formik.errors.socialNetwork)
                 }
                 onChange={formik.handleChange}
               >
@@ -116,8 +114,8 @@ const AddSocialNetworktitems = ({ auth, language }) => {
               </Select>
               <FormHelperText
                 error={
-                  Boolean(formik.touched.socialNetwork) &&
-                  Boolean(formik.errors.socialNetwork)
+                  Boolean(formik.touched.socialNetwork)
+                  && Boolean(formik.errors.socialNetwork)
                 }
               >
                 {formik.touched.socialNetwork && formik.errors.socialNetwork}
@@ -140,11 +138,11 @@ const AddSocialNetworktitems = ({ auth, language }) => {
           <Grid item xs={6} md={12} lg={6}>
             <Button
               size="small"
-              onClick={() => handelClick("cancel")}
+              onClick={() => handelClick('cancel')}
               color="primary"
               variant="contained"
               fullWidth
-              style={{ background: "#eb1921" }}
+              style={{ background: '#eb1921' }}
             >
               cancel
             </Button>
@@ -156,7 +154,7 @@ const AddSocialNetworktitems = ({ auth, language }) => {
               variant="contained"
               fullWidth
               type="submit"
-              style={{ background: "#eb1921" }}
+              style={{ background: '#eb1921' }}
             >
               Submit
             </Button>
@@ -172,11 +170,11 @@ const AddSocialNetworktitems = ({ auth, language }) => {
         <Grid container justifyContent="center">
           <Grid item>
             <Typography variant="p">
-              {language === "EN"
-                ? "Add social network"
-                : language === "RU"
-                ? "Добавить соцсеть "
-                : "Ավելացնել սոցիալական ցանց"}
+              {language === 'EN'
+                ? 'Add social network'
+                : language === 'RU'
+                  ? 'Добавить соцсеть '
+                  : 'Ավելացնել սոցիալական ցանց'}
             </Typography>
           </Grid>
         </Grid>
@@ -189,7 +187,7 @@ const AddSocialNetworktitems = ({ auth, language }) => {
               color="primary"
               aria-label="add"
               size="small"
-              style={{ background: "#eb1921" }}
+              style={{ background: '#eb1921' }}
             >
               <AddIcon />
             </Fab>
@@ -200,17 +198,17 @@ const AddSocialNetworktitems = ({ auth, language }) => {
   );
 
   return (
-    <Grid item sx={{ display: auth ? "block" : "none" }}>
+    <Grid item sx={{ display: auth ? 'block' : 'none' }}>
       <Grid container>
-        <Grid item sx={{ display: !switchState ? "flex" : "none" }}>
+        <Grid item sx={{ display: !switchState ? 'flex' : 'none' }}>
           {buttonAdd}
         </Grid>
-        <Grid item sx={{ display: switchState ? "block" : "none" }}>
+        <Grid item sx={{ display: switchState ? 'block' : 'none' }}>
           {formForAdd}
         </Grid>
       </Grid>
     </Grid>
   );
-};
+}
 
 export default AddSocialNetworktitems;

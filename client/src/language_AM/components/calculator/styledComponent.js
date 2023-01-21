@@ -1,7 +1,7 @@
-import styled from "@emotion/styled";
-import backImageCalculate from "./images/10.jpg";
+import styled from '@emotion/styled';
+import backImageCalculate from './images/10.jpg';
 
-export const CalculatorStyle = styled("div")`
+export const CalculatorStyle = styled('div')`
   margin-top: 16px;
 
   .calculator_parmas {
@@ -11,7 +11,7 @@ export const CalculatorStyle = styled("div")`
   }
 `;
 
-export const CalculatorParamsStyle = styled("div")`
+export const CalculatorParamsStyle = styled('div')`
   max-width: 625px;
   margin: auto;
   margin-top: 20px;
@@ -46,9 +46,9 @@ export const CalculatorParamsStyle = styled("div")`
     display: block;
     margin: auto;
   }
-`; 
+`;
 
-export const CalculatorResultStyle = styled("div")`
+export const CalculatorResultStyle = styled('div')`
     max-width: 625px;
     margin: auto;
     margin-bottom: 50px;
@@ -56,14 +56,14 @@ export const CalculatorResultStyle = styled("div")`
   .css-dsuxgy-MuiTableCell-root {
     display: flex;
   }
-`; 
+`;
 
-export const AdministratorSettingsCalculatStyles = styled("div")`
+export const AdministratorSettingsCalculatStyles = styled('div')`
   max-width: 625px;
   margin: auto;
-`; 
+`;
 
-export const AdministratorSettingsResaultStyles = styled("div")`
+export const AdministratorSettingsResaultStyles = styled('div')`
   max-width: 625px;
   margin: auto;
-`; 
+`;

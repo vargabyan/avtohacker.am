@@ -1,9 +1,9 @@
-import { styled } from "@mui/material/styles"
-import imgOurBaner from "./images/our_banner.jpg";
-import imgCar from "./images/car.jpg";
-import imgWork from "./images/work.jpg";
+import { styled } from '@mui/material/styles';
+import imgOurBaner from './images/our_banner.jpg';
+import imgCar from './images/car.jpg';
+import imgWork from './images/work.jpg';
 
-export const BannerStyle = styled("div")`
+export const BannerStyle = styled('div')`
 
 .keen-slider__slide {
   background-repeat: round !important;

@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const SearchItemStyle = styled('div')`
   width: 100%; 
@@ -61,7 +61,7 @@ export const FilterItemStyle = styled('div')`
   }
 `;
 
-export const ListItemStyle = styled("div")`
+export const ListItemStyle = styled('div')`
   max-width: 325px;
   position: relative;
 `;

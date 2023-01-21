@@ -1,35 +1,37 @@
-import React, { useState } from "react";
-import { Grid, Typography, Button, TextField } from "@mui/material";
-import { Box } from "@mui/system";
-import Fab from "@mui/material/Fab";
-import AddIcon from "@mui/icons-material/Add";
-import { useFormik } from "formik";
-import * as yup from "yup";
+import React, { useState } from 'react';
+import {
+  Grid, Typography, Button, TextField,
+} from '@mui/material';
+import { Box } from '@mui/system';
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
+import { useFormik } from 'formik';
+import * as yup from 'yup';
 
-const AddContactitems = ({ auth, language }) => {
+function AddContactitems({ auth, language }) {
   const [switchState, setSwitchState] = useState(false);
   const validationSchema = yup.object({
     address: yup
-      .string("Enter your address")
-      .min(2, "address should be of minimum 1 characters length")
-      .required("address is required"),
+      .string('Enter your address')
+      .min(2, 'address should be of minimum 1 characters length')
+      .required('address is required'),
     email: yup
-      .string("Enter your email")
-      .email("Enter a valid email")
-      .required("Email is required"),
+      .string('Enter your email')
+      .email('Enter a valid email')
+      .required('Email is required'),
     phone: yup
-      .string("Enter your phone")
-      .min(10, "phone should be of minimum 10 characters length")
-      .required("phone is required"),
+      .string('Enter your phone')
+      .min(10, 'phone should be of minimum 10 characters length')
+      .required('phone is required'),
   });
 
   const formik = useFormik({
     initialValues: {
-      address: "",
-      email: "",
-      phone: "",
+      address: '',
+      email: '',
+      phone: '',
     },
-    validationSchema: validationSchema,
+    validationSchema,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
@@ -38,26 +40,26 @@ const AddContactitems = ({ auth, language }) => {
   const handelClick = (param) => {
     setSwitchState(!switchState);
 
-    if (param === "cancel") {
-      formik.values.address = "";
-      formik.values.email = "";
-      formik.values.phone = "";
-      formik.errors.address = "";
-      formik.errors.email = "";
-      formik.errors.phone = "";
-      formik.touched.address = "";
-      formik.touched.email = "";
-      formik.touched.phone = "";
+    if (param === 'cancel') {
+      formik.values.address = '';
+      formik.values.email = '';
+      formik.values.phone = '';
+      formik.errors.address = '';
+      formik.errors.email = '';
+      formik.errors.phone = '';
+      formik.touched.address = '';
+      formik.touched.email = '';
+      formik.touched.phone = '';
     }
   };
 
   const formForAdd = (
     <Box
       sx={{
-        background: "white",
-        padding: "16px",
-        borderRadius: "5px",
-        maxWidth: "200px",
+        background: 'white',
+        padding: '16px',
+        borderRadius: '5px',
+        maxWidth: '200px',
       }}
     >
       <form onSubmit={formik.handleSubmit}>
@@ -71,8 +73,8 @@ const AddContactitems = ({ auth, language }) => {
               value={formik.values.address}
               onChange={formik.handleChange}
               error={
-                Boolean(formik.touched.address) &&
-                Boolean(formik.errors.address)
+                Boolean(formik.touched.address)
+                && Boolean(formik.errors.address)
               }
               helperText={formik.touched.address && formik.errors.address}
             />
@@ -109,11 +111,11 @@ const AddContactitems = ({ auth, language }) => {
           <Grid item xs={6} md={12} lg={6}>
             <Button
               size="small"
-              onClick={() => handelClick("cancel")}
+              onClick={() => handelClick('cancel')}
               color="primary"
               variant="contained"
               fullWidth
-              style={{ background: "#eb1921" }}
+              style={{ background: '#eb1921' }}
             >
               cancel
             </Button>
@@ -125,7 +127,7 @@ const AddContactitems = ({ auth, language }) => {
               variant="contained"
               fullWidth
               type="submit"
-              style={{ background: "#eb1921" }}
+              style={{ background: '#eb1921' }}
             >
               Submit
             </Button>
@@ -154,7 +156,7 @@ const AddContactitems = ({ auth, language }) => {
               color="primary"
               aria-label="add"
               size="small"
-              style={{ background: "#eb1921" }}
+              style={{ background: '#eb1921' }}
             >
               <AddIcon />
             </Fab>
@@ -165,17 +167,17 @@ const AddContactitems = ({ auth, language }) => {
   );
 
   return (
-    <Grid item sx={{ display: auth ? "block" : "none" }}>
+    <Grid item sx={{ display: auth ? 'block' : 'none' }}>
       <Grid container>
-        <Grid item sx={{ display: !switchState ? "flex" : "none" }}>
+        <Grid item sx={{ display: !switchState ? 'flex' : 'none' }}>
           {buttonAdd}
         </Grid>
-        <Grid item sx={{ display: switchState ? "block" : "none" }}>
+        <Grid item sx={{ display: switchState ? 'block' : 'none' }}>
           {formForAdd}
         </Grid>
       </Grid>
     </Grid>
   );
-};
+}
 
 export default AddContactitems;

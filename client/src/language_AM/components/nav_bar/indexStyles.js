@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const LanguageStyle = styled('div')`
   width: 55px;
@@ -87,7 +87,7 @@ export const DrawerChildrenElementStyle = styled('div')`
   }
 `;
 
-export const TelephonNumberLineStyle = styled('div') `
+export const TelephonNumberLineStyle = styled('div')`
   .gridBackground {
     width: 100%;
     height: 30px;

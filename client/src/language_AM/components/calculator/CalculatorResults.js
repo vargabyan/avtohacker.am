@@ -1,18 +1,18 @@
-import React from "react";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { CalculatorResultStyle } from "./styledComponent";
+import React from 'react';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
 import {
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableRow,
-} from "@mui/material";
-import { Box } from "@mui/system";
+} from '@mui/material';
+import { Box } from '@mui/system';
+import { CalculatorResultStyle } from './styledComponent';
 
-const CalculatorResults = () => {
+function CalculatorResults() {
   return (
     <CalculatorResultStyle>
       <Grid container spacing={2}>
@@ -24,10 +24,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "red",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'red',
+                        marginRight: '5px',
                       }}
                     />
                     Մեքենայի Արժեք
@@ -38,10 +38,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "red",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'red',
+                        marginRight: '5px',
                       }}
                     />
                     Միջնորդավճար
@@ -52,10 +52,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "orange",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'orange',
+                        marginRight: '5px',
                       }}
                     />
                     Աճուրդի միջնորդավճար
@@ -66,10 +66,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "orange",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'orange',
+                        marginRight: '5px',
                       }}
                     />
                     Տեղափոխման վճար
@@ -80,10 +80,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "orange",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'orange',
+                        marginRight: '5px',
                       }}
                     />
                     Ապահովագրություն
@@ -102,10 +102,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "yellow",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'yellow',
+                        marginRight: '5px',
                       }}
                     />
                     Մաքսատուրք
@@ -116,10 +116,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "yellow",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'yellow',
+                        marginRight: '5px',
                       }}
                     />
                     ԱԱՀ
@@ -130,10 +130,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "yellow",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'yellow',
+                        marginRight: '5px',
                       }}
                     />
                     Բնապահպանական հարկ
@@ -144,10 +144,10 @@ const CalculatorResults = () => {
                   <TableCell>
                     <Box
                       sx={{
-                        width: "5px",
-                        height: "20px",
-                        background: "yellow",
-                        marginRight: "5px",
+                        width: '5px',
+                        height: '20px',
+                        background: 'yellow',
+                        marginRight: '5px',
                       }}
                     />
                     Բրոքերական ծառայություն
@@ -175,20 +175,20 @@ const CalculatorResults = () => {
           <TableContainer component={Paper}>
             <Table size="small">
               <TableBody>
-                <TableRow key="total" sx={{ display: "flex" }}>
+                <TableRow key="total" sx={{ display: 'flex' }}>
                   <TableCell>
                     <Grid container spacing={1}>
                       <Grid item xs={2}>
                         <Box
                           sx={{
-                            width: "10px",
-                            height: "55px",
-                            background: "red",
+                            width: '10px',
+                            height: '55px',
+                            background: 'red',
                           }}
                         />
                       </Grid>
                       <Grid item xs={10}>
-                        <Box sx={{ fontSize: "10px" }}>
+                        <Box sx={{ fontSize: '10px' }}>
                           Ենթակա է վճարման մեքենան գնելուց հետո 1(մեկ)
                           աշխատանքային օրվա ընթացքում
                         </Box>
@@ -200,14 +200,14 @@ const CalculatorResults = () => {
                       <Grid item xs={2}>
                         <Box
                           sx={{
-                            width: "10px",
-                            height: "55px",
-                            background: "orange",
+                            width: '10px',
+                            height: '55px',
+                            background: 'orange',
                           }}
                         />
                       </Grid>
                       <Grid item xs={10}>
-                        <Box sx={{ fontSize: "10px", textAlign: "start" }}>
+                        <Box sx={{ fontSize: '10px', textAlign: 'start' }}>
                           Պայմանագրի կնքմանը հաջորդող 45(քառասունհինգ) օրվա
                           ընթացքում
                         </Box>
@@ -219,14 +219,14 @@ const CalculatorResults = () => {
                       <Grid item xs={2}>
                         <Box
                           sx={{
-                            width: "10px",
-                            height: "55px",
-                            background: "yellow",
+                            width: '10px',
+                            height: '55px',
+                            background: 'yellow',
                           }}
                         />
                       </Grid>
                       <Grid item xs={10}>
-                        <Box sx={{ fontSize: "10px", textAlign: "start" }}>
+                        <Box sx={{ fontSize: '10px', textAlign: 'start' }}>
                           Ավտոﬔքենայի ներմուծման վերաբերյալ ծանուցումը ստանալուց
                           հետո 3 (երեք) օրվա ընթացքում
                         </Box>
@@ -241,12 +241,12 @@ const CalculatorResults = () => {
         <Grid item xs={12}>
           <Grid container justifyContent="center" spacing={2}>
             <Grid item>
-              <Button variant="contained" sx={{ background: "#eb1921" }}>
+              <Button variant="contained" sx={{ background: '#eb1921' }}>
                 download
               </Button>
             </Grid>
             <Grid item>
-              <Button variant="contained" sx={{ background: "#eb1921" }}>
+              <Button variant="contained" sx={{ background: '#eb1921' }}>
                 sent to email
               </Button>
             </Grid>
@@ -255,6 +255,6 @@ const CalculatorResults = () => {
       </Grid>
     </CalculatorResultStyle>
   );
-};
+}
 
 export default CalculatorResults;

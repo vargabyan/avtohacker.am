@@ -1,23 +1,24 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import LANGUAGE_AN from "./language_AM";
-import Error from "./language_AM/error";
-import LANGUAGE_EN from "./language_EN";
-import LANGUAGE_RU from "./language_RU";
+import React from 'react';
+import {
+  BrowserRouter, Routes, Route, Navigate,
+} from 'react-router-dom';
+import LANGUAGE_AN from './language_AM';
+import Error from './error';
+import LANGUAGE_EN from './language_EN';
+import LANGUAGE_RU from './language_RU';
 
 function App() {
-  const definedLanguage =
-    navigator.language === "am"
-      ? "/am"
-      : navigator.language === "ru"
-      ? "/ru"
-      : "/en";
-  let language = localStorage.getItem("check-language")
-    ? localStorage.getItem("check-language")
+  const definedLanguage = navigator.language === 'am'
+    ? '/am'
+    : navigator.language === 'ru'
+      ? '/ru'
+      : '/en';
+  const language = localStorage.getItem('check-language')
+    ? localStorage.getItem('check-language')
     : definedLanguage;
 
-  if (!localStorage.getItem("check-language")) {
-    localStorage.setItem("check-language", document.location.pathname);
+  if (!localStorage.getItem('check-language')) {
+    localStorage.setItem('check-language', document.location.pathname);
   }
 
   return (

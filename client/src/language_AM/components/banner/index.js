@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { BannerStyle } from "./indexStyle";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+import React, { useState } from 'react';
+import { useKeenSlider } from 'keen-slider/react';
+import { BannerStyle } from './indexStyle';
+import 'keen-slider/keen-slider.min.css';
 
 function Arrow(props) {
-  const disabeld = props.disabled ? " arrow--disabled" : ""
+  const disabeld = props.disabled ? ' arrow--disabled' : '';
   return (
     <svg
       onClick={props.onClick}
       className={`arrow ${
-        props.left ? "arrow--left" : "arrow--right"
+        props.left ? 'arrow--left' : 'arrow--right'
       } ${disabeld}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -21,21 +21,21 @@ function Arrow(props) {
         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
       )}
     </svg>
-  )
+  );
 }
 
 function Banner() {
-  const [currentSlide, setCurrentSlide] = React.useState(0)
-  const [loaded, setLoaded] = useState(false)
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
     slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel)
+      setCurrentSlide(slider.track.details.rel);
     },
     created() {
-      setLoaded(true)
+      setLoaded(true);
     },
-  })
+  });
 
   return (
     <BannerStyle>
@@ -49,19 +49,15 @@ function Banner() {
           <>
             <Arrow
               left
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
+              onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
               disabled={currentSlide === 0}
             />
 
             <Arrow
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
+              onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
               disabled={
-                currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
+                currentSlide
+                === instanceRef.current.track.details.slides.length - 1
               }
             />
           </>
@@ -85,7 +81,7 @@ function Banner() {
         </div>
       )} */}
     </BannerStyle>
-  )
+  );
 }
 
-export default Banner
+export default Banner;

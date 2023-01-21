@@ -14,13 +14,13 @@ const validationSchema = yup.object({
     .required('Password is required'),
 });
 
-const WithMaterialUI = () => {
+function WithMaterialUI() {
   const formik = useFormik({
     initialValues: {
       email: 'foobar@example.com',
       password: 'foobar',
     },
-    validationSchema: validationSchema,
+    validationSchema,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
@@ -55,25 +55,23 @@ const WithMaterialUI = () => {
           />
         </Grid>
         <Grid item xs={10} sm={12}>
-          <Button sx={{background: "#eb1921", border: "double white 6px"}} variant="contained" fullWidth type="submit">
+          <Button sx={{ background: '#eb1921', border: 'double white 6px' }} variant="contained" fullWidth type="submit">
             Submit
           </Button>
         </Grid>
       </Grid>
     </form>
   );
-};
-
-
+}
 
 function Authentication() {
   return (
-    <Grid container justifyContent="center" sx={{marginTop: "150Px"}}>
+    <Grid container justifyContent="center" sx={{ marginTop: '150Px' }}>
       <Grid item>
         <WithMaterialUI />
       </Grid>
     </Grid>
-  )
+  );
 }
 
-export default Authentication
+export default Authentication;

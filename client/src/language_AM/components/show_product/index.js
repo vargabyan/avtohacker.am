@@ -8,7 +8,7 @@ function ShowProduct() {
         Show Product
       </Grid>
     </Grid>
-  )
+  );
 }
 
-export default ShowProduct
+export default ShowProduct;

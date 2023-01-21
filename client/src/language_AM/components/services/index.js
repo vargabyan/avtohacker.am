@@ -1,59 +1,59 @@
-import React from "react";
-import { Grid, Typography, Box } from "@mui/material";
-import "./icons/style.css";
+import React from 'react';
+import { Grid, Typography, Box } from '@mui/material';
+import './icons/style.css';
 
 const dataServiceItem = {
   car_selection: {
-    icon: "icon-icon_1",
-    header: "Ավտոﬔքենայի ընտրություն",
-    content: "Անհատական մոտեցում ﬔր փորձառու մասնագետների կողﬕց ﬔքենաների ընտրության , գնագոյացման հաշվարկի և այլ ծախսերի վերաբերյալ",
+    icon: 'icon-icon_1',
+    header: 'Ավտոﬔքենայի ընտրություն',
+    content: 'Անհատական մոտեցում ﬔր փորձառու մասնագետների կողﬕց ﬔքենաների ընտրության , գնագոյացման հաշվարկի և այլ ծախսերի վերաբերյալ',
   },
   deposit_payment: {
-    icon: "icon-icon_2",
-    header: "Դեպոզիտի վճարում",
-    content: "Նախատեսված աճուրդի գնի 15%-ի չափով, բայց ոչ պակաս քան 500000 դրամ։ Դեպոզիտը ենթակա է վերադաձի ﬕնչև ﬔքենայի գնելը։",
+    icon: 'icon-icon_2',
+    header: 'Դեպոզիտի վճարում',
+    content: 'Նախատեսված աճուրդի գնի 15%-ի չափով, բայց ոչ պակաս քան 500000 դրամ։ Դեպոզիտը ենթակա է վերադաձի ﬕնչև ﬔքենայի գնելը։',
   },
   car_history: {
-    icon: "icon-icon_3",
-    header: "Մեքենայի պատմություն",
-    content: "Նախքան աճուրդի մասնակցելը Ձեր ﬔնեջերը կստուգի նախընտրած ﬔքենայի պատմությունը (autocheck , carfax)",
+    icon: 'icon-icon_3',
+    header: 'Մեքենայի պատմություն',
+    content: 'Նախքան աճուրդի մասնակցելը Ձեր ﬔնեջերը կստուգի նախընտրած ﬔքենայի պատմությունը (autocheck , carfax)',
   },
   participation_in_the_auction: {
-    icon: "icon-icon_4",
-    header: "Աճուրդի մասնակցություն",
-    content: "Ձեր ներկայությամբ կամ օնլայն տարբերակով մասնակցում ենք աճուրդին և գնում ﬔքենան պլանավորված գնով",
-  }, 
+    icon: 'icon-icon_4',
+    header: 'Աճուրդի մասնակցություն',
+    content: 'Ձեր ներկայությամբ կամ օնլայն տարբերակով մասնակցում ենք աճուրդին և գնում ﬔքենան պլանավորված գնով',
+  },
   contract_Signing: {
-    icon: "icon-icon_5",
-    header: "Պայմանագրի կնքում",
-    content: "Որտեղ ամրագրվում է ﬔքենայի վերջնական արժեքը ՀՀում, վճարման 3 փուլերը, կողﬔրի իրավունքներն ու պարտականությունները:",
+    icon: 'icon-icon_5',
+    header: 'Պայմանագրի կնքում',
+    content: 'Որտեղ ամրագրվում է ﬔքենայի վերջնական արժեքը ՀՀում, վճարման 3 փուլերը, կողﬔրի իրավունքներն ու պարտականությունները:',
   },
   nland_transportation: {
-    icon: "icon-icon_6",
-    header: "ներքին փոխադրումներ",
-    content: "Մեքենան աճուրդից տեղափոխվում է համապատասխան նավահանգիստ, հասնելուն պես տրամադրվում են ավտոﬔքենայի հավելյալ լուսանկարներ",
+    icon: 'icon-icon_6',
+    header: 'ներքին փոխադրումներ',
+    content: 'Մեքենան աճուրդից տեղափոխվում է համապատասխան նավահանգիստ, հասնելուն պես տրամադրվում են ավտոﬔքենայի հավելյալ լուսանկարներ',
   },
   insurance: {
-    icon: "icon-icon_7",
-    header: "ապահովագրություն",
-    content: "Նավահանգստի նկարների հիման վրա կատարվում է տեղափոխման ապահովագրություն տեղական առաջատար ապահովագրական ընկերությունների ﬕջոցով",
+    icon: 'icon-icon_7',
+    header: 'ապահովագրություն',
+    content: 'Նավահանգստի նկարների հիման վրա կատարվում է տեղափոխման ապահովագրություն տեղական առաջատար ապահովագրական ընկերությունների ﬕջոցով',
   },
   sea_freight: {
-    icon: "icon-icon_8",
-    header: "ծովային բեռնափոխադրումներ",
-    content: "Ավտոﬔքենան բեռնվում է կոնտեյների ﬔջ, որի հատուկ համարի օգնությամբ կարող եք հետևել Ձեր գույքի տեղաշարժին",
+    icon: 'icon-icon_8',
+    header: 'ծովային բեռնափոխադրումներ',
+    content: 'Ավտոﬔքենան բեռնվում է կոնտեյների ﬔջ, որի հատուկ համարի օգնությամբ կարող եք հետևել Ձեր գույքի տեղաշարժին',
   },
   customs_clearance: {
-    icon: "icon-icon_9",
-    header: "մաքսազերծում",
-    content: "Մեր մասնագետների ներկայությամբ ﬔքենան բեռնաթափվում է կոնտեյներից և մաքսազերծվում է ﬔր բրոքերական կազմակերպության ﬕջոցով",
+    icon: 'icon-icon_9',
+    header: 'մաքսազերծում',
+    content: 'Մեր մասնագետների ներկայությամբ ﬔքենան բեռնաթափվում է կոնտեյներից և մաքսազերծվում է ﬔր բրոքերական կազմակերպության ﬕջոցով',
   },
   delivery: {
-    icon: "icon-icon_10",
-    header: "Հանձնում",
-    content: "Արդեն մաքսազերծված ﬔքենան հանձնվում է Ձեզ առուվաճառքի պայմանագրի հիման վրա"
-  }
-}
+    icon: 'icon-icon_10',
+    header: 'Հանձնում',
+    content: 'Արդեն մաքսազերծված ﬔքենան հանձնվում է Ձեզ առուվաճառքի պայմանագրի հիման վրա',
+  },
+};
 
 function Services({ home }) {
   const ServiceItem = () => {
@@ -67,7 +67,7 @@ function Services({ home }) {
                 <Grid item>
                   <span
                     className={dataServiceItem[key].icon}
-                    style={{ color: "red", fontSize: 70 }}
+                    style={{ color: 'red', fontSize: 70 }}
                   />
                 </Grid>
                 <Grid item xs>
@@ -87,7 +87,7 @@ function Services({ home }) {
               </Typography>
             </Grid>
           </Grid>
-        </Grid>
+        </Grid>,
       );
     }
     return array;
@@ -101,15 +101,15 @@ function Services({ home }) {
             <Typography
               variant="h4"
               fontWeight={900}
-              align={home ? "start" : "center"}
+              align={home ? 'start' : 'center'}
             >
               ՄԵԶ ՀԵՏ ԳՆԵԼԸ ՇԱՀԱՎԵՏ Է ԵՎ ԱՊԱՀՈՎ
             </Typography>
           </Grid>
-          <Grid item xs={12} display={home ? "block" : "none"}>
-            <Box width="80px" height="4px" sx={{ background: "#eb1921" }} />
+          <Grid item xs={12} display={home ? 'block' : 'none'}>
+            <Box width="80px" height="4px" sx={{ background: '#eb1921' }} />
           </Grid>
-          <Grid item xs={12} display={home ? "block" : "none"}>
+          <Grid item xs={12} display={home ? 'block' : 'none'}>
             <Typography fontWeight={900}>
               ՍՏԱՑԵ՛Ք ԲՈԼՈՐ ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐԸ՝ 1 ՓԱԹԵԹՈՒՄ
             </Typography>

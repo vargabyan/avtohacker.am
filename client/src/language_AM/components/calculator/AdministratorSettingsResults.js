@@ -1,8 +1,8 @@
-import React from "react";
-import { Grid } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import { AdministratorSettingsResaultStyles } from "./styledComponent";
+import React from 'react';
+import { Grid } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import { AdministratorSettingsResaultStyles } from './styledComponent';
 // import {
 //   text_calculator
 // } from "./TextContent";
@@ -11,16 +11,16 @@ function AdministratorSettingsResults() {
   const firstBlock = (
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
         <Button className="buttonSend" variant="outlined" fullWidth>
@@ -33,16 +33,16 @@ function AdministratorSettingsResults() {
   const secondBlock = (
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
-        <TextField fullWidth type="number" size="small" label={"index"} />
+        <TextField fullWidth type="number" size="small" label="index" />
       </Grid>
       <Grid item xs={12}>
         <Button className="buttonSend" variant="outlined" fullWidth>
@@ -55,7 +55,7 @@ function AdministratorSettingsResults() {
   return (
     <AdministratorSettingsResaultStyles>
       <Grid container justifyContent="center" spacing={4}>
-        <Grid item xs={12} sx={{ mb: { md: "60px" } }}>
+        <Grid item xs={12} sx={{ mb: { md: '60px' } }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               {firstBlock}

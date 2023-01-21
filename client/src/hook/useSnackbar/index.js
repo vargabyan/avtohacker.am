@@ -5,10 +5,10 @@ import Alert from '@mui/material/Alert';
 
 export default function useCustomizedSnackbars(status, messages) {
   const [open, setOpen] = useState(false);
-  
-    const handleSnackbarsClick = () => {
-      setOpen(true);
-    };
+
+  const handleSnackbarsClick = () => {
+    setOpen(true);
+  };
 
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
@@ -28,6 +28,6 @@ export default function useCustomizedSnackbars(status, messages) {
         </Snackbar>
       </Stack>
     ),
-    handleSnackbarsClick
+    handleSnackbarsClick,
   };
 }

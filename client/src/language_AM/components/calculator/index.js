@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { Grid, Typography } from "@mui/material";
-import { CalculatorStyle } from "./styledComponent";
-import { useSelector } from "react-redux";
-import AdministratorSettingsCalculate from "./AdministratorSettingsCalculate";
-import AdministratorSettingsResults from "./AdministratorSettingsResults";
-import CalculatorParmas from "./CalculatorParmas";
-import CalculatorResults from "./CalculatorResults";
+import React, { useState } from 'react';
+import { Grid, Typography } from '@mui/material';
+import { useSelector } from 'react-redux';
+import { CalculatorStyle } from './styledComponent';
+import AdministratorSettingsCalculate from './AdministratorSettingsCalculate';
+import AdministratorSettingsResults from './AdministratorSettingsResults';
+import CalculatorParmas from './CalculatorParmas';
+import CalculatorResults from './CalculatorResults';
 
 function Calculator() {
   const auth = useSelector((state) => state.authenticationReducer.value);
-  const [dataForCalculatorResultsState, setDataForCalculatorResultsState] = useState([])
+  const [dataForCalculatorResultsState, setDataForCalculatorResultsState] = useState([]);
 
   return (
     <CalculatorStyle>
       <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={10} md={10} sx={{ display: auth ? "block" : "none" }}>
+        <Grid item xs={10} md={10} sx={{ display: auth ? 'block' : 'none' }}>
           <Grid container spacing={2}>
             <Grid item xs={12} mb={2}>
               <Grid container justifyContent="center">
@@ -40,7 +40,7 @@ function Calculator() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={10} md={12} sx={{ display: dataForCalculatorResultsState.length ? "block" : "none" }}>
+        <Grid item xs={10} md={12} sx={{ display: dataForCalculatorResultsState.length ? 'block' : 'none' }}>
           <CalculatorResults dataForCalculatorResultsState={dataForCalculatorResultsState} />
         </Grid>
       </Grid>

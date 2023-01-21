@@ -1,6 +1,6 @@
-import React from "react";
-import { Grid, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Grid, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Error() {
   return (
@@ -16,7 +16,7 @@ function Error() {
         </Typography>
       </Grid>
     </Grid>
-  )
+  );
 }
 
 export default Error;

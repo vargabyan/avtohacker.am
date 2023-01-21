@@ -1,29 +1,28 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   FormControl,
   Grid,
   InputLabel,
   MenuItem,
   Select,
-} from "@mui/material";
-import Autocomplete from "@mui/material/Autocomplete";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import { auctionPlace } from "./Data";
-import { AdministratorSettingsCalculatStyles } from "./styledComponent";
+} from '@mui/material';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import { auctionPlace } from './Data';
+import { AdministratorSettingsCalculatStyles } from './styledComponent';
 import {
-  text_calculator
-} from "./TextContent";
-import iaaImage from "./images/Iaa.png";
-import copartImage from "./images/coopart.png";
-import koreanImage from "./images/korean.png";
+  text_calculator,
+} from './TextContent';
+import iaaImage from './images/Iaa.png';
+import copartImage from './images/coopart.png';
+import koreanImage from './images/korean.png';
 
 function AdministratorSettingsCalculat() {
-
   const [value, setValue] = useState({
-    selectCarType: "",
-    selectFuelType: "",
-    selectAuction: "",
+    selectCarType: '',
+    selectFuelType: '',
+    selectAuction: '',
   });
   const [open, setOpen] = useState({
     selectCarType: false,
@@ -32,15 +31,15 @@ function AdministratorSettingsCalculat() {
   });
 
   const handleChange = (event, key) => {
-    console.log(event.target.value, key)
+    console.log(event.target.value, key);
     switch (key) {
-      case "selectCarType":
+      case 'selectCarType':
         setValue({ ...value, selectCarType: event.target.value });
         break;
-      case "selectFuelType":
+      case 'selectFuelType':
         setValue({ ...value, selectFuelType: event.target.value });
         break;
-      case "selectAuction":
+      case 'selectAuction':
         setValue({ ...value, selectAuction: event.target.value });
         break;
       default:
@@ -50,13 +49,13 @@ function AdministratorSettingsCalculat() {
 
   const handleOpenClose = (key) => {
     switch (key) {
-      case "selectCarType":
+      case 'selectCarType':
         setOpen({ ...open, selectCarType: !open.selectCarType });
         break;
-      case "selectFuelType":
+      case 'selectFuelType':
         setOpen({ ...open, selectFuelType: !open.selectFuelType });
         break;
-      case "selectAuction":
+      case 'selectAuction':
         setOpen({ ...open, selectAuction: !open.selectAuction });
         break;
       default:
@@ -72,15 +71,13 @@ function AdministratorSettingsCalculat() {
           <Select
             size="small"
             open={open.selectCarType}
-            onClose={() => handleOpenClose("selectCarType")}
-            onOpen={() => handleOpenClose("selectCarType")}
+            onClose={() => handleOpenClose('selectCarType')}
+            onOpen={() => handleOpenClose('selectCarType')}
             value={value.selectCarType}
             label={text_calculator.carType}
-            onChange={(e) => handleChange(e, "selectCarType")}
+            onChange={(e) => handleChange(e, 'selectCarType')}
           >
-            {text_calculator.selectCarType.map((index) => {
-              return <MenuItem key={index} value={index}>{index}</MenuItem>;
-            })}
+            {text_calculator.selectCarType.map((index) => <MenuItem key={index} value={index}>{index}</MenuItem>)}
           </Select>
         </FormControl>
       </Grid>
@@ -90,25 +87,21 @@ function AdministratorSettingsCalculat() {
           <Select
             size="small"
             open={open.selectFuelType}
-            onClose={() => handleOpenClose("selectFuelType")}
-            onOpen={() => handleOpenClose("selectFuelType")}
+            onClose={() => handleOpenClose('selectFuelType')}
+            onOpen={() => handleOpenClose('selectFuelType')}
             value={value.selectFuelType}
             label={text_calculator.fuelType}
-            onChange={(e) => handleChange(e, "selectFuelType")}
+            onChange={(e) => handleChange(e, 'selectFuelType')}
           >
-            {text_calculator.selectFuelType.map((index) => {
-              return <MenuItem key={index} value={index}>{index}</MenuItem>;
-            })}
+            {text_calculator.selectFuelType.map((index) => <MenuItem key={index} value={index}>{index}</MenuItem>)}
           </Select>
         </FormControl>
       </Grid>
-      {text_calculator.selectAge.map((elem) => {
-        return (
-          <Grid item xs={12}>
-            <TextField fullWidth type="number" size="small" label={elem} />
-          </Grid>
-        );
-      })}
+      {text_calculator.selectAge.map((elem) => (
+        <Grid item xs={12}>
+          <TextField fullWidth type="number" size="small" label={elem} />
+        </Grid>
+      ))}
       <Grid item xs={12}>
         <Button className="buttonSend" variant="outlined" fullWidth>
           save
@@ -119,19 +112,19 @@ function AdministratorSettingsCalculat() {
 
   const arr = [
     {
-      name: "iaa",
-      image: <img src={iaaImage} alt="iaa" className="iaaImage" style={{height: "15px", width: "30px"}} />,
-      value: "",
+      name: 'iaa',
+      image: <img src={iaaImage} alt="iaa" className="iaaImage" style={{ height: '15px', width: '30px' }} />,
+      value: '',
     },
     {
-      name: "copart",
-      image: <img src={copartImage} alt="copart" className="copartImage" style={{height: "15px", width: "30px"}} />,
-      value: "",
+      name: 'copart',
+      image: <img src={copartImage} alt="copart" className="copartImage" style={{ height: '15px', width: '30px' }} />,
+      value: '',
     },
     {
-      name: "korea",
-      image: <img src={koreanImage} alt="korea" style={{height: "15px", width: "30px"}} />,
-      value: "",
+      name: 'korea',
+      image: <img src={koreanImage} alt="korea" style={{ height: '15px', width: '30px' }} />,
+      value: '',
     },
   ];
 
@@ -143,19 +136,17 @@ function AdministratorSettingsCalculat() {
           <Select
             size="small"
             open={open.selectAuction}
-            onClose={() => handleOpenClose("selectAuction")}
-            onOpen={() => handleOpenClose("selectAuction")}
+            onClose={() => handleOpenClose('selectAuction')}
+            onOpen={() => handleOpenClose('selectAuction')}
             value={value.selectAuction}
             label={text_calculator.fuelType}
-            onChange={(e) => handleChange(e, "selectAuction")}
+            onChange={(e) => handleChange(e, 'selectAuction')}
           >
-            {arr.map((index) => {
-              return (
-                <MenuItem  key={index} value={index.name}>
-                  {index.image}
-                </MenuItem>
-              ) 
-            })}
+            {arr.map((index) => (
+              <MenuItem key={index} value={index.name}>
+                {index.image}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
       </Grid>
@@ -178,7 +169,7 @@ function AdministratorSettingsCalculat() {
   return (
     <AdministratorSettingsCalculatStyles>
       <Grid container spacing={4}>
-        <Grid item xs={12}  sx={{ mb: { lg: "60px" }}}>
+        <Grid item xs={12} sx={{ mb: { lg: '60px' } }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <Grid container spacing={2}>
@@ -190,29 +181,25 @@ function AdministratorSettingsCalculat() {
                     freeSolo
                     size="small"
                     options={auctionPlace.map((elem) => elem.name)}
-                    renderInput={(params) => {
-                      return (
-                        <TextField
-                          label={text_calculator.selectLocation}
-                          {...params}
-                        />
-                      );
-                    }}
+                    renderInput={(params) => (
+                      <TextField
+                        label={text_calculator.selectLocation}
+                        {...params}
+                      />
+                    )}
                   />
                 </Grid>
                 {
-                  text_calculator.selectCarType.map((index) => {
-                    return (
-                      <Grid item xs={12}>
-                        <TextField
-                          fullWidth
-                          type="number"
-                          size="small"
-                          label={index}
-                        />
-                      </Grid>
-                    )
-                  })
+                  text_calculator.selectCarType.map((index) => (
+                    <Grid item xs={12}>
+                      <TextField
+                        fullWidth
+                        type="number"
+                        size="small"
+                        label={index}
+                      />
+                    </Grid>
+                  ))
                 }
                 <Grid item xs={12}>
                   <Button className="buttonSend" variant="outlined" fullWidth>

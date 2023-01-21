@@ -1,29 +1,27 @@
-import React from "react";
-import Flicking from "@egjs/react-flicking";
-import "@egjs/react-flicking/dist/flicking.css";
-import "@egjs/react-flicking/dist/flicking-inline.css";
-import { Perspective } from "@egjs/flicking-plugins";
-import { ShowcaseStyle, GoodsImageStyle } from "./indexStyle";
-import { Grid, Typography, Box } from "@mui/material";
-import car_1 from "./images/1.jpeg";
-import car_2 from "./images/2.png";
-import car_3 from "./images/3.jpeg";
-import car_4 from "./images/4.jpeg";
-import car_5 from "./images/5.png";
-import car_6 from "./images/6.jpeg";
+import React from 'react';
+import Flicking from '@egjs/react-flicking';
+import '@egjs/react-flicking/dist/flicking.css';
+import '@egjs/react-flicking/dist/flicking-inline.css';
+import { Perspective } from '@egjs/flicking-plugins';
+import { Grid, Typography, Box } from '@mui/material';
+import { ShowcaseStyle, GoodsImageStyle } from './indexStyle';
+import car_1 from './images/1.jpeg';
+import car_2 from './images/2.png';
+import car_3 from './images/3.jpeg';
+import car_4 from './images/4.jpeg';
+import car_5 from './images/5.png';
+import car_6 from './images/6.jpeg';
 
 const car = [car_1, car_2, car_3, car_4, car_5, car_6];
 
 function Showcase() {
   const plugins = [new Perspective({ rotate: 0.3 })];
 
-  const goods = car.map((index) => {
-    return (
-      <GoodsImageStyle img={index}>
-        <Box className="goods_image" />
-      </GoodsImageStyle>
-    );
-  });
+  const goods = car.map((index) => (
+    <GoodsImageStyle img={index}>
+      <Box className="goods_image" />
+    </GoodsImageStyle>
+  ));
 
   return (
     <ShowcaseStyle>
@@ -51,7 +49,7 @@ function Showcase() {
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          <Flicking circular={true} plugins={plugins}>
+          <Flicking circular plugins={plugins}>
             {goods}
           </Flicking>
         </Grid>
