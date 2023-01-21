@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from "react";
-import Autocomplete from "@mui/material/Autocomplete";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import ToggleButton from "@mui/material/ToggleButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import Grid from "@mui/material/Grid";
-import { auctionPlace } from "./Data";
-import { CalculatorParamsStyle } from "./styledComponent";
-import { Typography } from "@mui/material";
-import iaaImage from "./images/Iaa.png";
-import copartImage from "./images/coopart.png";
-import koreanImage from "./images/korean.png";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import * as yup from "yup";
-import { useFormik } from "formik";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import useHttpRequest from "../../../hook/useHttpRequest/useHttpRequest";
-import useCustomizedSnackbars from "../../../hook/useSnackbar";
+import React, { useState, useEffect } from 'react';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Grid from '@mui/material/Grid';
+import { Typography } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import * as yup from 'yup';
+import { useFormik } from 'formik';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import koreanImage from './images/korean.png';
+import copartImage from './images/coopart.png';
+import iaaImage from './images/Iaa.png';
+import { CalculatorParamsStyle } from './styledComponent';
+import { auctionPlace } from './Data';
+import useHttpRequest from '../../../hook/useHttpRequest/useHttpRequest';
+import useCustomizedSnackbars from '../../../hook/useSnackbar';
 
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: 'dark',
     primary: {
-      main: "#ffff",
+      main: '#ffff',
     },
   },
 });
@@ -39,48 +39,47 @@ const validationSchema = yup.object({
   ShippingPrice: yup.string().required(),
 });
 
-const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
-  const [alignment, setAlignment] = useState("");
-  const [selectCarTypeState, setSelectCarTypeState] = useState("");
+function CalculatorParmas({ setDataForCalculatorResultsState }) {
+  const [alignment, setAlignment] = useState('');
+  const [selectCarTypeState, setSelectCarTypeState] = useState('');
   const [requestState, setRequestState] = useState({
-    method: "",
-    url: "",
-    body: "",
+    method: '',
+    url: '',
+    body: '',
   });
   const [
     auctionPlacesAndDeliveryPricesState,
     setAuctionPlacesAndDeliveryPricesState,
   ] = useState({});
   const { snackbars, handleSnackbarsClick } = useCustomizedSnackbars(
-    "warning",
-    "Լրացրեք բոլոր բաց թողնված վանդակները"
+    'warning',
+    'Լրացրեք բոլոր բաց թողնված վանդակները',
   );
   const { responsetData } = useHttpRequest(
     requestState.method,
     requestState.url,
-    requestState.body
+    requestState.body,
   );
 
   useEffect(() => {
-    setDataForCalculatorResultsState(responsetData.data)
-    console.log(responsetData.data, Boolean(responsetData.data.length))
+    setDataForCalculatorResultsState(responsetData.data);
+    console.log(responsetData.data, Boolean(responsetData.data.length));
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [responsetData.data])
-  
+  }, [responsetData.data]);
 
   const formik = useFormik({
     initialValues: {
-      carPrice: "",
-      selectAge: "",
-      selectFuelType: "",
-      engine: "",
-      auctionPrice: "",
-      ShippingPrice: "",
+      carPrice: '',
+      selectAge: '',
+      selectFuelType: '',
+      engine: '',
+      auctionPrice: '',
+      ShippingPrice: '',
     },
-    validationSchema: validationSchema,
+    validationSchema,
     onSubmit: (values) => {
       console.log(JSON.stringify(values, null, 2));
-      setRequestState({ method: "post", url: "/calculate", body: values });
+      setRequestState({ method: 'post', url: '/calculate', body: values });
     },
   });
 
@@ -89,14 +88,14 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
       setAlignment(newAlignment);
 
       switch (newAlignment) {
-        case "copart":
-            formik.values.auctionPrice = 300;
+        case 'copart':
+          formik.values.auctionPrice = 300;
           break;
-        case "korean":
-            formik.values.auctionPrice = 400;
+        case 'korean':
+          formik.values.auctionPrice = 400;
           break;
-        case "iaa":
-            formik.values.auctionPrice = 500;
+        case 'iaa':
+          formik.values.auctionPrice = 500;
           break;
         default:
           break;
@@ -109,22 +108,18 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
 
     if (auctionPlacesAndDeliveryPricesState) {
       switch (`price_${event.target.value}`) {
-        case "price_sedan":
-          formik.values.ShippingPrice =
-            auctionPlacesAndDeliveryPricesState.price_sedan;
+        case 'price_sedan':
+          formik.values.ShippingPrice = auctionPlacesAndDeliveryPricesState.price_sedan;
           break;
-        case "price_suv":
-          formik.values.ShippingPrice =
-            auctionPlacesAndDeliveryPricesState.price_suv;
+        case 'price_suv':
+          formik.values.ShippingPrice = auctionPlacesAndDeliveryPricesState.price_suv;
           break;
-        case "price_pickup":
-          formik.values.ShippingPrice =
-            auctionPlacesAndDeliveryPricesState.price_pickup;
+        case 'price_pickup':
+          formik.values.ShippingPrice = auctionPlacesAndDeliveryPricesState.price_pickup;
           break;
-        case "price_motorcycle":
-          formik.values.ShippingPrice =
-            auctionPlacesAndDeliveryPricesState.price_motorcycle;
-          break
+        case 'price_motorcycle':
+          formik.values.ShippingPrice = auctionPlacesAndDeliveryPricesState.price_motorcycle;
+          break;
         default:
           break;
       }
@@ -132,7 +127,7 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
   };
 
   const handelChoicePlace = (e) => {
-    formik.values.ShippingPrice = "";
+    formik.values.ShippingPrice = '';
 
     if (e.target.innerText) {
       for (const key in auctionPlace) {
@@ -141,18 +136,17 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
 
           if (selectCarTypeState) {
             switch (`price_${selectCarTypeState}`) {
-              case "price_sedan":
+              case 'price_sedan':
                 formik.values.ShippingPrice = auctionPlace[key].price_sedan;
                 break;
-              case "price_suv":
+              case 'price_suv':
                 formik.values.ShippingPrice = auctionPlace[key].price_suv;
                 break;
-              case "price_pickup":
+              case 'price_pickup':
                 formik.values.ShippingPrice = auctionPlace[key].price_pickup;
                 break;
-              case "price_motorcycle":
-                formik.values.ShippingPrice =
-                  auctionPlace[key].price_motorcycle;
+              case 'price_motorcycle':
+                formik.values.ShippingPrice = auctionPlace[key].price_motorcycle;
                 break;
               default:
                 break;
@@ -165,42 +159,45 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
 
   const handleSubmit = () => {
     if (
-      Boolean(formik.errors.carPrice) ||
-      Boolean(formik.errors.ShippingPrice) ||
-      Boolean(formik.errors.auction) ||
-      Boolean(formik.errors.engine) ||
-      Boolean(formik.errors.selectAge) ||
-      Boolean(formik.errors.selectFuelType)
+      Boolean(formik.errors.carPrice)
+      || Boolean(formik.errors.ShippingPrice)
+      || Boolean(formik.errors.auction)
+      || Boolean(formik.errors.engine)
+      || Boolean(formik.errors.selectAge)
+      || Boolean(formik.errors.selectFuelType)
     ) {
       handleSnackbarsClick();
     }
     if (
-      !Boolean(formik.values.carPrice) &
-      !Boolean(formik.values.ShippingPrice) &
-      !Boolean(formik.values.auction) &
-      !Boolean(formik.values.engine) &
-      !Boolean(formik.values.selectAge) &
-      !Boolean(formik.values.selectFuelType)
+      !formik.values.carPrice
+      & !formik.values.ShippingPrice
+      & !formik.values.auction
+      & !formik.values.engine
+      & !formik.values.selectAge
+      & !formik.values.selectFuelType
     ) {
       handleSnackbarsClick();
     }
   };
 
-  const text = 
-    true ?
-                        
-                          <MenuItem value="-3">մինչև 3 տարի</MenuItem>
-                          <MenuItem value="3-5">3 - 5 տարի</MenuItem>
-                          <MenuItem value="5-7">5 - 7 տարի</MenuItem>
-                          <MenuItem value="7+">7 +</MenuItem>
-                        
-                      :
-                        
-                          <MenuItem value="-5">մինչև 5 տարի</MenuItem>
-                          <MenuItem value="5-10">5 - 10 տարի</MenuItem>
-                          <MenuItem value="10-15">10 - 15 տարի</MenuItem>
-                        
-  
+  const text = true
+    ? (
+      <>
+        <MenuItem value="-3">մինչև 3 տարի</MenuItem>
+        <MenuItem value="3-5">3 - 5 տարի</MenuItem>
+        <MenuItem value="5-7">5 - 7 տարի</MenuItem>
+        <MenuItem value="7+">7 +</MenuItem>
+      </>
+    )
+
+    : (
+      <>
+        <MenuItem value="-5">մինչև 5 տարի</MenuItem>
+        <MenuItem value="5-10">5 - 10 տարի</MenuItem>
+        <MenuItem value="10-15">10 - 15 տարի</MenuItem>
+
+      </>
+    );
 
   return (
     <ThemeProvider theme={theme}>
@@ -274,9 +271,7 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
                     size="small"
                     options={auctionPlace.map((elem) => elem.name)}
                     onInputChange={handelChoicePlace}
-                    renderInput={(params) => {
-                      return <TextField label="Աճուրդի վայր" {...params} />;
-                    }}
+                    renderInput={(params) => <TextField label="Աճուրդի վայր" {...params} />}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -321,7 +316,7 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
                       name="selectAge"
                       onChange={formik.handleChange}
                     >
-                    { 
+                      {
 
                     }
                     </Select>
@@ -373,6 +368,6 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
       {snackbars}
     </ThemeProvider>
   );
-};
+}
 
 export default CalculatorParmas;

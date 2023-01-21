@@ -3,9 +3,6 @@ import {
   BrowserRouter, Routes, Route, Navigate,
 } from 'react-router-dom';
 import LANGUAGE_AN from './language_AM';
-import Error from './error';
-import LANGUAGE_EN from './language_EN';
-import LANGUAGE_RU from './language_RU';
 
 function App() {
   const definedLanguage = navigator.language === 'am'
