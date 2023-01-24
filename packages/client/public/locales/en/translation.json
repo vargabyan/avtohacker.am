@@ -1,0 +1,122 @@
+{
+  "aboute_us": {
+    "header": "ABOUT IAA MOTORS COMPANY",
+    "story": "IAA MOTORS is the official representative of the largest American car auction company IAA (Insurance Auto Auction) in Armenia. The company was established in 2003, opening the first branch in Georgia, then, in 2016 it opened new branch in Armenia and in 2017 in Ukraine. Today IAA MOTORS is represented by 7 branches in 3 countries. Secondary market cars are in great demand primarily due to their affordable price. Even a light damage can reduce the market price of a car by up to 3 times. Reliable repairs, which are incomparably affordable in imported countries (compared to the US), will allow you to return the car to its original appearance, quality and operate it safely for many years."
+  },
+  "services": {
+    "header": {
+      "part1": "TERMS & CONDITIONS",
+      "part2": "GET ALL THE SERVICES IN ONE PACKAGE"
+    },
+    "": {
+      "car_selection": {
+        "icon": "icon-icon_1",
+        "header": "Car selection",
+        "content": "Individual evaluation by our specialists on the selection of cars, calculation of pricing and other costs."
+      },
+      "deposit_payment": {
+        "icon": "icon-icon_2",
+        "header": "Deposit payment",
+        "content": "In the amount of 15% of the planned auction price, but not less than AMD 500,000. The deposit is refundable until the car is purchased."
+      },
+      "car_history": {
+        "icon": "icon-icon_3",
+        "header": "Car history",
+        "content": "Before participating in the auction, your manager will check the history of the preferred car (autocheck, carfax)."
+      },
+      "participation_in_the_auction": {
+        "icon": "icon-icon_4",
+        "header": "Unemployment participation",
+        "content": "We participate in the auction in your presence or online and buy the car at the planned price"
+      },
+      "contract_Signing": {
+        "icon": "icon-icon_5",
+        "header": "Contract Signing",
+        "content": "Where the final price of the car in RA is determined, the 3 stages of payment, the rights, and responsibilities of the parties."
+      },
+      "inland_transportation": {
+        "icon": "icon-icon_6",
+        "header": "Internal transportation",
+        "content": "The car is moved from the auction to the appropriate port, to get as provided additional photos of the car."
+      },
+      "insurance": {
+        "icon": "icon-icon_7",
+        "header": "Insurance",
+        "content": "Shipping insurance is provided through leading local insurance companies based on port drawings"
+      },
+      "sea_freight": {
+        "icon": "icon-icon_8",
+        "header": "Sea freight",
+        "content": "The vehicle is loaded into a container with a special number that allows you to track the movement of your property."
+      },
+      "customs_clearance": {
+        "icon": "icon-icon_9",
+        "header": "Customs clearance",
+        "content": "Brokerage properties are downloaded from the container and cleared in the presence of our specialists"
+      },
+      "delivery": {
+        "icon": "icon-icon_10",
+        "header": "Personification",
+        "content": "The already cleared car is handed over to you based on the sales contract"
+      }
+    }
+  },
+  "showcase": {
+    "header": "Hot lost and full inventore"
+  },
+  "home": {
+    "part1": "ORDER A CALL",
+    "part2": "If you want our specialist to contact you, leave your details by filling out the form below.."
+  },
+  "our_team": {
+    "header": "Add employee"
+  },
+  "nab_bar": {
+    "nav_link": {
+      "aboute_us": "ABOUTE US",
+      "calculate": "CALCULATOR",
+      "inventory": "INVENTORY",
+      "our_team": "OUR TEAM",
+      "services": "SERVICES",
+      "order_a_call": "ORDER A CALL"
+    },
+    "telephon": "REACH US ANYTIME AT",
+    "system_control": "System management"
+  },
+  "footer": {
+    "header": "CONTACT",
+    "add_spcial_networkt_items": "Add social network",
+    "add_contact_items": "Add contact"
+  },
+  "calculate": {
+    "header": "Administrator settings",
+    "text_content_calculator_EN": {
+      "header": "Below calculator allows you to count the auction fee, shipping, insurance and customs clearance according to the 2020 EEC tariffs.",
+      "carPrice": "Car Price",
+      "Auction": "Auction",
+      "other": "other",
+      "selectLocation": "Select Location",
+      "ShippingPrice": "Shipping",
+      "fuelType": "Fuel Type",
+      "selectFuelType": ["Diesel", "Gasoline", "Full electric"],
+      "Age": "Age",
+      "selectAge": ["up to 3 years", "3 - 5 years", "5 - 7 years", "7 +"],
+      "engine": "Engine, cm³",
+      "carType": "Vehicle Type",
+      "selectCarType": ["Motorcycle", "Sedan", "Pickup", "SUV"],
+      "button": "Calculate"
+    },
+    "text_content_calculatorResult_EN": {
+      "carPrice": "Car Price",
+      "auctionFee": "Auction Fee",
+      "shippingPrice": "Shipping",
+      "Insurance": "Insurance",
+      "serviceFee": "Service Fee",
+      "customsDuty": "Customs Duty",
+      "vat": "VAT",
+      "ecoTax": "Eco tax",
+      "brokerFee": "Broker fee",
+      "total": "Total"
+    }
+  }
+}

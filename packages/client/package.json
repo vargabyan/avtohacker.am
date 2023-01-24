@@ -1,0 +1,73 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@egjs/flicking-plugins": "^4.5.0",
+    "@egjs/react-flicking": "^4.10.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "@mui/system": "^5.11.5",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "formik": "^2.2.9",
+    "i18next": "^22.4.9",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.1.1",
+    "keen-slider": "^6.8.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.4",
+    "react-icons": "^4.6.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "proxy": "http://localhost:5000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write ."
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-auto-fix": "^1.0.4",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "2.8.3"
+  }
+}
