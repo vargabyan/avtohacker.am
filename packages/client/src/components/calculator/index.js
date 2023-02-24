@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import { Grid, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { CalculatorStyle } from './styledComponent';
-import AdministratorSettingsCalculate from './AdministratorSettingsCalculate';
-import AdministratorSettingsResults from './AdministratorSettingsResults';
-import CalculatorParmas from './CalculatorParmas';
-import CalculatorResults from './CalculatorResults';
+import CalculatorStyle from './styledComponent';
+import AdministratorSettingsCalculate from './administratorSettingsCalculate';
+import CalculatorParmas from './calculatorParmas/CalculatorParmas';
+import CalculatorResults from './calculatorParmas/CalculatorResults';
 
 const Calculator = () => {
   const auth = useSelector((state) => state.authenticationReducer.value);
-  const [dataForCalculatorResultsState, setDataForCalculatorResultsState] = useState([]);
+  const [dataForCalculatorResultsState, setDataForCalculatorResultsState] = useState();
   const { t } = useTranslation();
 
   return (
@@ -25,11 +24,8 @@ const Calculator = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} lg={6}>
+            <Grid item xs={10} lg={12}>
               <AdministratorSettingsCalculate />
-            </Grid>
-            <Grid item xs={12} lg={6}>
-              <AdministratorSettingsResults />
             </Grid>
           </Grid>
         </Grid>
@@ -45,7 +41,7 @@ const Calculator = () => {
           xs={10}
           md={12}
           sx={{
-            display: dataForCalculatorResultsState.length ? 'block' : 'none',
+            display: dataForCalculatorResultsState ? 'block' : 'none',
           }}
         >
           <CalculatorResults dataForCalculatorResultsState={dataForCalculatorResultsState} />

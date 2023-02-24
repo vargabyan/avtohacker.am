@@ -14,14 +14,15 @@ import car_6 from './images/6.jpeg';
 
 const car = [car_1, car_2, car_3, car_4, car_5, car_6];
 
+const goods = car.map((element, index) => (
+  // eslint-disable-next-line react/no-array-index-key
+  <GoodsImageStyle img={element} key={`${index}-uniq`}>
+    <Box className='goods_image' />
+  </GoodsImageStyle>
+));
+
 const Showcase = () => {
   const plugins = [new Perspective({ rotate: 0.3 })];
-
-  const goods = car.map((index) => (
-    <GoodsImageStyle img={index}>
-      <Box className='goods_image' />
-    </GoodsImageStyle>
-  ));
 
   return (
     <ShowcaseStyle>

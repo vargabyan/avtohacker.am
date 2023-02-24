@@ -1,27 +1,64 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid, Button, TextField } from '@mui/material';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import { useDispatch } from 'react-redux';
+// import bcrypt from 'bcryptjs';
+import useHttpRequest from '../../hook/useHttpRequest/useHttpRequest';
+import { login } from '../../reducers/authentication';
 
 const validationSchema = yup.object({
   email: yup.string('Enter your email').email('Enter a valid email').required('Email is required'),
   password: yup
     .string('Enter your password')
-    .min(8, 'Password should be of minimum 8 characters length')
+    .min(6, 'Password should be of minimum 8 characters length')
     .required('Password is required'),
 });
 
+const initialValues = {
+  email: '',
+  password: '',
+};
+
 const WithMaterialUI = () => {
+  const { responsetData, httpRequest } = useHttpRequest();
+  const dispatch = useDispatch();
+
   const formik = useFormik({
-    initialValues: {
-      email: 'foobar@example.com',
-      password: 'foobar',
-    },
+    initialValues,
     validationSchema,
     onSubmit(values) {
-      console.log(JSON.stringify(values, null, 2));
+      httpRequest('post', '/admin/auth', values);
     },
   });
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+  useEffect(() => {
+    if (responsetData.data?.accessToken) {
+      httpRequest('get', '/admin/auth', null, ['authorization', `Bearer ${responsetData.data?.accessToken}`]);
+    }
+    if (responsetData.data?.refreshToken) {
+      const user = JSON.stringify({ token: responsetData.data.refreshToken });
+      const result = localStorage.getItem('auth');
+
+      if (result) {
+        localStorage.removeItem('auth');
+        localStorage.setItem('auth', user);
+      } else {
+        localStorage.setItem('auth', user);
+      }
+    }
+    if (responsetData.data?.auth) {
+      // const checkHesh = bcrypt.compareSync(formik.values.password, responsetData.data?.auth.password);
+
+      // if (checkHesh) {
+      dispatch(login());
+      // }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [responsetData.data]);
 
   return (
     <form onSubmit={formik.handleSubmit}>
@@ -67,7 +104,7 @@ const WithMaterialUI = () => {
 };
 
 const Authentication = () => (
-  <Grid container justifyContent='center' sx={{ marginTop: '150Px' }}>
+  <Grid container justifyContent='center' sx={{ marginTop: '150px', marginBottom: '150px' }}>
     <Grid item>
       <WithMaterialUI />
     </Grid>

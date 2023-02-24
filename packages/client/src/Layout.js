@@ -1,15 +1,22 @@
 import React, { useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Navigate, Outlet, useLocation, useParams } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import Footer from './components/footer/index';
 import NavBar from './components/nav_bar/index';
 
-const Layout = ({ setAdminButtonState }) => {
+const supportLanguage = ['am', 'ru', 'en'];
+
+const Layout = () => {
   const location = useLocation();
+  const { lang } = useParams();
 
   useEffect(() => {
     window.scrollTo({ top: '0px' });
   }, [location]);
+
+  if (!supportLanguage.includes(lang)) {
+    return <Navigate to='/404' />;
+  }
 
   return (
     <Grid container>
@@ -17,14 +24,14 @@ const Layout = ({ setAdminButtonState }) => {
         <NavBar />
       </Grid>
       <Grid item xs={12}>
-        <Grid container spacing={4} justifyContent='center' minHeight='700px'>
+        <Grid container spacing={4} justifyContent='center' minHeight='400px'>
           <Grid item xs={12}>
             <Outlet />
           </Grid>
         </Grid>
       </Grid>
       <Grid item xs={12}>
-        <Footer setAdminButtonState={setAdminButtonState} />
+        <Footer />
       </Grid>
     </Grid>
   );

@@ -114,7 +114,14 @@ const DrawerAppBar = (props) => {
       >
         <AppBar component='nav'>
           <Box className='systemControlBox' sx={{ display: auth ? 'black' : 'none' }}>
-            {t('nab_bar.system_control')}
+            <Grid container justifyContent='center'>
+              <Grid item sx={{ grid: 1 }}>
+                {t('nab_bar.system_control')}
+              </Grid>
+              <Grid item>
+                <Button>logaout</Button>
+              </Grid>
+            </Grid>
           </Box>
           <Toolbar>
             <IconButton

@@ -1,3 +1,5 @@
 import styled from '@emotion/styled';
 
-export const GetCallBackStyles = styled('div')``;
+const GetCallBackStyles = styled('div')``;
+
+export default GetCallBackStyles;

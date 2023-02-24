@@ -13,7 +13,7 @@ const FooterStyle = styled('div')`
     div {
       background: url(${map});
       height: 100%;
-      backgroundsize: cover;
+      background-size: cover;
     }
   }
 
