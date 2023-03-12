@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import AppBar from '@mui/material/AppBar';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
@@ -19,6 +19,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { DrawerAppBarStyle, DrawerChildrenElementStyle, TelephonNumberLineStyle } from './indexStyles';
 import { IconBsCalculatorFill, IconIoIosCall } from './icons';
+import { logout } from '../../reducers/authentication';
 import { data_Contacts } from '../footer/address';
 import LanguageSelection from './LanguageSelection';
 
@@ -61,6 +62,7 @@ const NavItems = () => {
   const { t } = useTranslation();
   const itemNameNavBar = t('nab_bar.nav_link', { returnObjects: true });
   const array = Object.keys(itemNameNavBar);
+
   return array.map((index) => (
     <NavLink to={index} key={index}>
       {({ isActive }) => (
@@ -78,6 +80,7 @@ const DrawerItems = () => {
   const { t } = useTranslation();
   const itemNameNavBar = t('nab_bar.nav_link', { returnObjects: true });
   const array = Object.keys(itemNameNavBar);
+
   return array.map((index) => (
     <NavLink to={index} key={index}>
       {({ isActive }) => (
@@ -93,6 +96,7 @@ const DrawerItems = () => {
 
 const DrawerAppBar = (props) => {
   const auth = useSelector((state) => state.authenticationReducer.value);
+  const dispatch = useDispatch();
   const logo = 'AUTOHACKER';
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -102,6 +106,10 @@ const DrawerAppBar = (props) => {
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+
+  const handleLogaut = () => {
+    dispatch(logout());
   };
 
   return (
@@ -114,7 +122,16 @@ const DrawerAppBar = (props) => {
       >
         <AppBar component='nav'>
           <Box className='systemControlBox' sx={{ display: auth ? 'black' : 'none' }}>
-            {t('nab_bar.system_control')}
+            <Grid container justifyContent='center'>
+              <Grid item sx={{ flexGrow: 1 }} alignSelf='center'>
+                {t('nab_bar.system_control')}
+              </Grid>
+              <Grid item>
+                <Button variant='text' onClick={handleLogaut}>
+                  {t('nab_bar.logaout')}
+                </Button>
+              </Grid>
+            </Grid>
           </Box>
           <Toolbar>
             <IconButton

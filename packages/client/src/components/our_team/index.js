@@ -1,37 +1,38 @@
 import React, { useState } from 'react';
+import { object, string } from 'yup';
 import { Grid, Typography, Button, TextField, Box } from '@mui/material';
 import { useSelector } from 'react-redux';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import { useFormik } from 'formik';
-import * as yup from 'yup';
 import EmployeeContactDetailsStyles from './EmployeeContactDetailsStylesStyles';
 import { IconIoIosCall, IconMdMail } from './Icons';
 import data from './data';
 
+const initialValues = {
+  address: '',
+  email: '',
+  phone: '',
+};
+
+const validationSchema = object({
+  address: string('Enter your address')
+    .min(2, 'address should be of minimum 1 characters length')
+    .required('address is required'),
+  email: string('Enter your email').email('Enter a valid email').required('Email is required'),
+  phone: string('Enter your phone')
+    .min(10, 'phone should be of minimum 10 characters length')
+    .required('phone is required'),
+});
+
 const AddEmployeeContactDetails = ({ auth }) => {
   const [switchState, setSwitchState] = useState(false);
-  const validationSchema = yup.object({
-    address: yup
-      .string('Enter your address')
-      .min(2, 'address should be of minimum 1 characters length')
-      .required('address is required'),
-    email: yup.string('Enter your email').email('Enter a valid email').required('Email is required'),
-    phone: yup
-      .string('Enter your phone')
-      .min(10, 'phone should be of minimum 10 characters length')
-      .required('phone is required'),
-  });
 
   const formik = useFormik({
-    initialValues: {
-      address: '',
-      email: '',
-      phone: '',
-    },
+    initialValues,
     validationSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      console.log(values);
     },
   });
 
@@ -39,15 +40,7 @@ const AddEmployeeContactDetails = ({ auth }) => {
     setSwitchState(!switchState);
 
     if (param === 'cancel') {
-      formik.values.address = '';
-      formik.values.email = '';
-      formik.values.phone = '';
-      formik.errors.address = '';
-      formik.errors.email = '';
-      formik.errors.phone = '';
-      formik.touched.address = '';
-      formik.touched.email = '';
-      formik.touched.phone = '';
+      formik.resetForm(initialValues);
     }
   };
 
@@ -167,7 +160,8 @@ const OurTeam = () => {
   const auth = useSelector((state) => state.authenticationReducer.value);
 
   const employeeContactDetails = data.map((index) => (
-    <Grid item>
+    // remmove random
+    <Grid item key={`${index.email}_${index.phone}_${Math.random()}`}>
       <Grid container spacing={1}>
         <Grid item xs={6}>
           <img src={index.photo} alt='' style={{ height: '150px', borderRadius: '18px' }} />

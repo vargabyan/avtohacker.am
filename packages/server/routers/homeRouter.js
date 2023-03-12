@@ -1,12 +1,18 @@
-const { Router } = require("express")
-const homeRouter = Router()
-const { calculation } = require("../controllers/calculateController")
+const { Router } = require('express');
 
-// homeRouter.post("/calculate", calculation)
-homeRouter.post("/calculate", (request, response) => {
-  console.log(request.body, "+++")
+const homeRouter = Router();
+const {
+  postCalculation,
+  getCalculation,
+} = require('../controllers/home/calculateController');
+const {
+  postSendToMail,
+  postFileSandToMail,
+} = require('../controllers/home/sendToMailController');
 
-  response.send("ok")
-})
+homeRouter.post('/calculate', postCalculation);
+homeRouter.get('/calculate', getCalculation);
+homeRouter.post('/send-mail', postSendToMail);
+homeRouter.post('/img', postFileSandToMail);
 
-module.exports = homeRouter
+module.exports = homeRouter;

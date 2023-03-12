@@ -1,0 +1,2410 @@
+[
+  {
+    "price_sedan": "2800",
+    "price_suv": "2850",
+    "price_pickup": "3065",
+    "price_motorcycle": "2100",
+    "value": "1",
+    "name": "AL-BIRMINGHAM"
+  },
+  {
+    "price_sedan": "2765",
+    "price_suv": "2815",
+    "price_pickup": "3030",
+    "price_motorcycle": "2065",
+    "value": "2",
+    "name": "AL-DOTHAN"
+  },
+  {
+    "price_sedan": "2905",
+    "price_suv": "2955",
+    "price_pickup": "3170",
+    "price_motorcycle": "2205",
+    "value": "3",
+    "name": "AL-HUNTSVILLE"
+  },
+  {
+    "price_sedan": "2800",
+    "price_suv": "2850",
+    "price_pickup": "3065",
+    "price_motorcycle": "2100",
+    "value": "4",
+    "name": "AL-MOBILE"
+  },
+  {
+    "price_sedan": "2800",
+    "price_suv": "2850",
+    "price_pickup": "3065",
+    "price_motorcycle": "2100",
+    "value": "5",
+    "name": "AL-MONTGOMERY"
+  },
+  {
+    "price_sedan": "2800",
+    "price_suv": "2850",
+    "price_pickup": "3065",
+    "price_motorcycle": "2100",
+    "value": "6",
+    "name": "AL-TANNER"
+  },
+  {
+    "price_sedan": "2825",
+    "price_suv": "2875",
+    "price_pickup": "3125",
+    "price_motorcycle": "2100",
+    "value": "7",
+    "name": "AR-FAYETTEVILLE COPART"
+  },
+  {
+    "price_sedan": "2575",
+    "price_suv": "2625",
+    "price_pickup": "2875",
+    "price_motorcycle": "1850",
+    "value": "8",
+    "name": "AR-FAYETTEVILLE IAA"
+  },
+  {
+    "price_sedan": "2725",
+    "price_suv": "2775",
+    "price_pickup": "2975",
+    "price_motorcycle": "1750",
+    "value": "9",
+    "name": "AR-LITTLE ROCK COPART"
+  },
+  {
+    "price_sedan": "2725",
+    "price_suv": "2775",
+    "price_pickup": "3025",
+    "price_motorcycle": "2000",
+    "value": "10",
+    "name": "AR-LITTLE ROCK IAA"
+  },
+  {
+    "price_sedan": "3435",
+    "price_suv": "3485",
+    "price_pickup": "5395",
+    "price_motorcycle": "2485",
+    "value": "11",
+    "name": "AZ-PHOENIX"
+  },
+  {
+    "price_sedan": "3515",
+    "price_suv": "3565",
+    "price_pickup": "5475",
+    "price_motorcycle": "2565",
+    "value": "12",
+    "name": "AZ-TUCSON"
+  },
+  {
+    "price_sedan": "3205",
+    "price_suv": "3255",
+    "price_pickup": "5165",
+    "price_motorcycle": "2185",
+    "value": "14",
+    "name": "CA- ACE Carson"
+  },
+  {
+    "price_sedan": "3205",
+    "price_suv": "3255",
+    "price_pickup": "5165",
+    "price_motorcycle": "2255",
+    "value": "15",
+    "name": "CA- ACE Perris"
+  },
+  {
+    "price_sedan": "3285",
+    "price_suv": "3335",
+    "price_pickup": "5245",
+    "price_motorcycle": "2335",
+    "value": "13",
+    "name": "CA-ADELANTO"
+  },
+  {
+    "price_sedan": "3135",
+    "price_suv": "3185",
+    "price_pickup": "5015",
+    "price_motorcycle": "2105",
+    "value": "16",
+    "name": "CA-ANAHEIM"
+  },
+  {
+    "price_sedan": "3485",
+    "price_suv": "3535",
+    "price_pickup": "5445",
+    "price_motorcycle": "2535",
+    "value": "17",
+    "name": "CA-ANTELOPE"
+  },
+  {
+    "price_sedan": "3245",
+    "price_suv": "3295",
+    "price_pickup": "5205",
+    "price_motorcycle": "2135",
+    "value": "18",
+    "name": "CA-BAKERSFIELD"
+  },
+  {
+    "price_sedan": "3180",
+    "price_suv": "3230",
+    "price_pickup": "5030",
+    "price_motorcycle": "2150",
+    "value": "19",
+    "name": "CA-COLTON"
+  },
+  {
+    "price_sedan": "3525",
+    "price_suv": "3575",
+    "price_pickup": "5485",
+    "price_motorcycle": "2575",
+    "value": "20",
+    "name": "CA-EAST BAY"
+  },
+  {
+    "price_sedan": "3205",
+    "price_suv": "3255",
+    "price_pickup": "5165",
+    "price_motorcycle": "2255",
+    "value": "21",
+    "name": "CA-FONTANA"
+  },
+  {
+    "price_sedan": "3525",
+    "price_suv": "3575",
+    "price_pickup": "5485",
+    "price_motorcycle": "2575",
+    "value": "22",
+    "name": "CA-FREMONT"
+  },
+  {
+    "price_sedan": "3325",
+    "price_suv": "3375",
+    "price_pickup": "5285",
+    "price_motorcycle": "2375",
+    "value": "23",
+    "name": "CA-FRESNO"
+  },
+  {
+    "price_sedan": "3485",
+    "price_suv": "3535",
+    "price_pickup": "5445",
+    "price_motorcycle": "2535",
+    "value": "24",
+    "name": "CA-HAYWARD"
+  },
+  {
+    "price_sedan": "3485",
+    "price_suv": "3535",
+    "price_pickup": "5445",
+    "price_motorcycle": "2535",
+    "value": "25",
+    "name": "CA-HAYWARD DESERT VIEW"
+  },
+  {
+    "price_sedan": "3245",
+    "price_suv": "3295",
+    "price_pickup": "5205",
+    "price_motorcycle": "2135",
+    "value": "26",
+    "name": "CA-HIGH DESERT"
+  },
+  {
+    "price_sedan": "3245",
+    "price_suv": "3295",
+    "price_pickup": "5205",
+    "price_motorcycle": "2215",
+    "value": "27",
+    "name": "CA-LONG BEACH"
+  },
+  {
+    "price_sedan": "3245",
+    "price_suv": "3295",
+    "price_pickup": "5205",
+    "price_motorcycle": "2295",
+    "value": "28",
+    "name": "CA-LOS ANGELES"
+  },
+  {
+    "price_sedan": "3445",
+    "price_suv": "3495",
+    "price_pickup": "5405",
+    "price_motorcycle": "2495",
+    "value": "29",
+    "name": "CA-MARTINEZ"
+  },
+  {
+    "price_sedan": "3135",
+    "price_suv": "3185",
+    "price_pickup": "5015",
+    "price_motorcycle": "2105",
+    "value": "30",
+    "name": "CA-NORTH HOLLYWOOD"
+  },
+  {
+    "price_sedan": "3205",
+    "price_suv": "3255",
+    "price_pickup": "5165",
+    "price_motorcycle": "2255",
+    "value": "31",
+    "name": "CA-RANCHO CUCAMONGA"
+  },
+  {
+    "price_sedan": "3115",
+    "price_suv": "3165",
+    "price_pickup": "4995",
+    "price_motorcycle": "2085",
+    "value": "32",
+    "name": "CA-RANCHO-DESERT VIEW"
+  },
+  {
+    "price_sedan": "3645",
+    "price_suv": "3695",
+    "price_pickup": "5605",
+    "price_motorcycle": "2695",
+    "value": "33",
+    "name": "CA-REDDING"
+  },
+  {
+    "price_sedan": "3285",
+    "price_suv": "3335",
+    "price_pickup": "5285",
+    "price_motorcycle": "2335",
+    "value": "34",
+    "name": "CA-RIVERSIDE"
+  },
+  {
+    "price_sedan": "3405",
+    "price_suv": "3455",
+    "price_pickup": "5365",
+    "price_motorcycle": "2455",
+    "value": "35",
+    "name": "CA-SACRAMENTO"
+  },
+  {
+    "price_sedan": "3405",
+    "price_suv": "3455",
+    "price_pickup": "5365",
+    "price_motorcycle": "2455",
+    "value": "36",
+    "name": "CA-SACRAMENTO-DESERT VIEW"
+  },
+  {
+    "price_sedan": "3180",
+    "price_suv": "3230",
+    "price_pickup": "5060",
+    "price_motorcycle": "2150",
+    "value": "37",
+    "name": "CA-SAN BERNARDINO"
+  },
+  {
+    "price_sedan": "3205",
+    "price_suv": "3255",
+    "price_pickup": "5165",
+    "price_motorcycle": "2150",
+    "value": "38",
+    "name": "CA-SAN DIEGO"
+  },
+  {
+    "price_sedan": "3205",
+    "price_suv": "3255",
+    "price_pickup": "5060",
+    "price_motorcycle": "2150",
+    "value": "39",
+    "name": "CA-SAN DIEGO-DESERT VIEW"
+  },
+  {
+    "price_sedan": "3525",
+    "price_suv": "3575",
+    "price_pickup": "5485",
+    "price_motorcycle": "2575",
+    "value": "40",
+    "name": "CA-SAN JOSE"
+  },
+  {
+    "price_sedan": "3180",
+    "price_suv": "3230",
+    "price_pickup": "5060",
+    "price_motorcycle": "2150",
+    "value": "41",
+    "name": "CA-SANTA PAULA-DESERT VIEW"
+  },
+  {
+    "price_sedan": "3405",
+    "price_suv": "3455",
+    "price_pickup": "5365",
+    "price_motorcycle": "2455",
+    "value": "42",
+    "name": "CA-SO SACRAMENTO"
+  },
+  {
+    "price_sedan": "3165",
+    "price_suv": "3215",
+    "price_pickup": "5125",
+    "price_motorcycle": "2215",
+    "value": "43",
+    "name": "CA-SUN VALLEY"
+  },
+  {
+    "price_sedan": "3485",
+    "price_suv": "3535",
+    "price_pickup": "5365",
+    "price_motorcycle": "2535",
+    "value": "44",
+    "name": "CA-VALLEJO"
+  },
+  {
+    "price_sedan": "3205",
+    "price_suv": "3255",
+    "price_pickup": "5165",
+    "price_motorcycle": "2255",
+    "value": "45",
+    "name": "CA-VAN NUYS"
+  },
+  {
+    "price_sedan": "3145",
+    "price_suv": "3195",
+    "price_pickup": "3505",
+    "price_motorcycle": "2420",
+    "value": "46",
+    "name": "CO-COLORADO SPRINGS"
+  },
+  {
+    "price_sedan": "3265",
+    "price_suv": "3315",
+    "price_pickup": "3625",
+    "price_motorcycle": "2540",
+    "value": "47",
+    "name": "CO-DENVER"
+  },
+  {
+    "price_sedan": "3225",
+    "price_suv": "3275",
+    "price_pickup": "3585",
+    "price_motorcycle": "2500",
+    "value": "48",
+    "name": "CO-DENVER CENTRAL"
+  },
+  {
+    "price_sedan": "3145",
+    "price_suv": "3195",
+    "price_pickup": "3505",
+    "price_motorcycle": "2420",
+    "value": "49",
+    "name": "CO-DENVER EAST"
+  },
+  {
+    "price_sedan": "3225",
+    "price_suv": "3275",
+    "price_pickup": "3585",
+    "price_motorcycle": "2500",
+    "value": "50",
+    "name": "CO-DENVER SOUTH"
+  },
+  {
+    "price_sedan": "3825",
+    "price_suv": "3875",
+    "price_pickup": "4185",
+    "price_motorcycle": "2540",
+    "value": "51",
+    "name": "CO-WESTERN COLORADO"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1775",
+    "value": "52",
+    "name": "CT-HARTFORD"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1775",
+    "value": "53",
+    "name": "CT-HARTFORD SPRINGFIELD"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1775",
+    "value": "54",
+    "name": "CT-Hartford-South"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "55",
+    "name": "DC-WASHINGTON DC-MD"
+  },
+  {
+    "price_sedan": "2725",
+    "price_suv": "2775",
+    "price_pickup": "2950",
+    "price_motorcycle": "1675",
+    "value": "56",
+    "name": "DE-NEW CASTLE"
+  },
+  {
+    "price_sedan": "2775",
+    "price_suv": "2825",
+    "price_pickup": "3050",
+    "price_motorcycle": "1725",
+    "value": "57",
+    "name": "DE-SEAFORD"
+  },
+  {
+    "price_sedan": "2505",
+    "price_suv": "2555",
+    "price_pickup": "2845",
+    "price_motorcycle": "1755",
+    "value": "58",
+    "name": "FL-CAT Jacksonville Sub lot"
+  },
+  {
+    "price_sedan": "2610",
+    "price_suv": "2660",
+    "price_pickup": "2950",
+    "price_motorcycle": "1860",
+    "value": "59",
+    "name": "FL-CAT Orlando Boggy Creek"
+  },
+  {
+    "price_sedan": "2505",
+    "price_suv": "2555",
+    "price_pickup": "2845",
+    "price_motorcycle": "1775",
+    "value": "61",
+    "name": "FL-CLEARWATER"
+  },
+  {
+    "price_sedan": "2575",
+    "price_suv": "2625",
+    "price_pickup": "2915",
+    "price_motorcycle": "1825",
+    "value": "60",
+    "name": "FL-Dover Sublot"
+  },
+  {
+    "price_sedan": "2645",
+    "price_suv": "2695",
+    "price_pickup": "3085",
+    "price_motorcycle": "1895",
+    "value": "62",
+    "name": "FL-FORT MYERS"
+  },
+  {
+    "price_sedan": "2820",
+    "price_suv": "2870",
+    "price_pickup": "3160",
+    "price_motorcycle": "2070",
+    "value": "63",
+    "name": "FL-FORT PIERCE"
+  },
+  {
+    "price_sedan": "2575",
+    "price_suv": "2625",
+    "price_pickup": "2915",
+    "price_motorcycle": "1825",
+    "value": "64",
+    "name": "FL-FT.PIERCE"
+  },
+  {
+    "price_sedan": "2505",
+    "price_suv": "2555",
+    "price_pickup": "2845",
+    "price_motorcycle": "1755",
+    "value": "65",
+    "name": "FL-JACKSONVILLE"
+  },
+  {
+    "price_sedan": "2505",
+    "price_suv": "2555",
+    "price_pickup": "2845",
+    "price_motorcycle": "1755",
+    "value": "66",
+    "name": "FL-JACKSONVILLE EAST"
+  },
+  {
+    "price_sedan": "2505",
+    "price_suv": "2555",
+    "price_pickup": "2845",
+    "price_motorcycle": "1755",
+    "value": "67",
+    "name": "FL-JACKSONVILLE WEST"
+  },
+  {
+    "price_sedan": "2395",
+    "price_suv": "2445",
+    "price_pickup": "2665",
+    "price_motorcycle": "1575",
+    "value": "68",
+    "name": "FL-MIAMI"
+  },
+  {
+    "price_sedan": "2470",
+    "price_suv": "2520",
+    "price_pickup": "2810",
+    "price_motorcycle": "1720",
+    "value": "69",
+    "name": "FL-MIAMI CENTRAL"
+  },
+  {
+    "price_sedan": "2395",
+    "price_suv": "2445",
+    "price_pickup": "2665",
+    "price_motorcycle": "1575",
+    "value": "70",
+    "name": "FL-MIAMI NORTH"
+  },
+  {
+    "price_sedan": "2380",
+    "price_suv": "2430",
+    "price_pickup": "2650",
+    "price_motorcycle": "1560",
+    "value": "71",
+    "name": "FL-MIAMI SOUTH"
+  },
+  {
+    "price_sedan": "2680",
+    "price_suv": "2730",
+    "price_pickup": "3020",
+    "price_motorcycle": "1930",
+    "value": "72",
+    "name": "FL-OCALA"
+  },
+  {
+    "price_sedan": "2575",
+    "price_suv": "2625",
+    "price_pickup": "2915",
+    "price_motorcycle": "1825",
+    "value": "73",
+    "name": "FL-ORLANDO"
+  },
+  {
+    "price_sedan": "2575",
+    "price_suv": "2625",
+    "price_pickup": "2915",
+    "price_motorcycle": "1825",
+    "value": "74",
+    "name": "FL-ORLANDO NORTH"
+  },
+  {
+    "price_sedan": "2610",
+    "price_suv": "2660",
+    "price_pickup": "2950",
+    "price_motorcycle": "1860",
+    "value": "75",
+    "name": "FL-ORLANDO SOUTH"
+  },
+  {
+    "price_sedan": "2610",
+    "price_suv": "2660",
+    "price_pickup": "2950",
+    "price_motorcycle": "1860",
+    "value": "76",
+    "name": "FL-PENSACOLA"
+  },
+  {
+    "price_sedan": "2505",
+    "price_suv": "2555",
+    "price_pickup": "2845",
+    "price_motorcycle": "1755",
+    "value": "77",
+    "name": "FL-PUNTA GORDA"
+  },
+  {
+    "price_sedan": "2680",
+    "price_suv": "2730",
+    "price_pickup": "3020",
+    "price_motorcycle": "1930",
+    "value": "78",
+    "name": "FL-TALLAHASSEE"
+  },
+  {
+    "price_sedan": "2540",
+    "price_suv": "2590",
+    "price_pickup": "2845",
+    "price_motorcycle": "1775",
+    "value": "79",
+    "name": "FL-TAMPA"
+  },
+  {
+    "price_sedan": "2395",
+    "price_suv": "2445",
+    "price_pickup": "2665",
+    "price_motorcycle": "1575",
+    "value": "80",
+    "name": "FL-WEST PALM BEACH"
+  },
+  {
+    "price_sedan": "2510",
+    "price_suv": "2560",
+    "price_pickup": "2775",
+    "price_motorcycle": "1810",
+    "value": "81",
+    "name": "GA-ATLANTA"
+  },
+  {
+    "price_sedan": "2720",
+    "price_suv": "2770",
+    "price_pickup": "2985",
+    "price_motorcycle": "2020",
+    "value": "82",
+    "name": "GA-ATLANTA EAST"
+  },
+  {
+    "price_sedan": "2650",
+    "price_suv": "2700",
+    "price_pickup": "2915",
+    "price_motorcycle": "1950",
+    "value": "83",
+    "name": "GA-ATLANTA NORTH"
+  },
+  {
+    "price_sedan": "2510",
+    "price_suv": "2560",
+    "price_pickup": "2775",
+    "price_motorcycle": "1810",
+    "value": "84",
+    "name": "GA-ATLANTA SOUTH"
+  },
+  {
+    "price_sedan": "2580",
+    "price_suv": "2630",
+    "price_pickup": "2845",
+    "price_motorcycle": "1880",
+    "value": "85",
+    "name": "GA-ATLANTA WEST"
+  },
+  {
+    "price_sedan": "2650",
+    "price_suv": "2700",
+    "price_pickup": "2915",
+    "price_motorcycle": "1950",
+    "value": "86",
+    "name": "GA-CARTERSVILLE"
+  },
+  {
+    "price_sedan": "2505",
+    "price_suv": "2555",
+    "price_pickup": "2845",
+    "price_motorcycle": "1615",
+    "value": "87",
+    "name": "GA-FAIRBURN"
+  },
+  {
+    "price_sedan": "2580",
+    "price_suv": "2630",
+    "price_pickup": "2845",
+    "price_motorcycle": "1880",
+    "value": "88",
+    "name": "GA-MACON"
+  },
+  {
+    "price_sedan": "2295",
+    "price_suv": "2345",
+    "price_pickup": "2490",
+    "price_motorcycle": "1525",
+    "value": "89",
+    "name": "GA-SAVANNAH"
+  },
+  {
+    "price_sedan": "2510",
+    "price_suv": "2560",
+    "price_pickup": "2775",
+    "price_motorcycle": "1810",
+    "value": "90",
+    "name": "GA-TIFTON"
+  },
+  {
+    "price_sedan": "5305",
+    "price_suv": "5355",
+    "price_pickup": "7665",
+    "price_motorcycle": "3795",
+    "value": "91",
+    "name": "HI-HONOLULU"
+  },
+  {
+    "price_sedan": "3225",
+    "price_suv": "3275",
+    "price_pickup": "3500",
+    "price_motorcycle": "2175",
+    "value": "92",
+    "name": "IA-Crashedtoys Eldridge"
+  },
+  {
+    "price_sedan": "3225",
+    "price_suv": "3275",
+    "price_pickup": "3500",
+    "price_motorcycle": "2175",
+    "value": "93",
+    "name": "IA-DAVENPORT"
+  },
+  {
+    "price_sedan": "3225",
+    "price_suv": "3275",
+    "price_pickup": "3500",
+    "price_motorcycle": "2175",
+    "value": "94",
+    "name": "IA-DES MOINES"
+  },
+  {
+    "price_sedan": "3525",
+    "price_suv": "3575",
+    "price_pickup": "5475",
+    "price_motorcycle": "2575",
+    "value": "95",
+    "name": "ID-BOISE"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3410",
+    "price_motorcycle": "1875",
+    "value": "96",
+    "name": "IL-CHICAGO NORTH"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3410",
+    "price_motorcycle": "1875",
+    "value": "97",
+    "name": "IL-CHICAGO SOUTH"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3340",
+    "price_motorcycle": "1930",
+    "value": "98",
+    "name": "IL-CHICAGO WEST"
+  },
+  {
+    "price_sedan": "3215",
+    "price_suv": "3265",
+    "price_pickup": "3480",
+    "price_motorcycle": "2265",
+    "value": "99",
+    "name": "IL-LINCOLN"
+  },
+  {
+    "price_sedan": "3045",
+    "price_suv": "3095",
+    "price_pickup": "3450",
+    "price_motorcycle": "1815",
+    "value": "101",
+    "name": "IL-PEORIA"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3345",
+    "price_motorcycle": "2160",
+    "value": "102",
+    "name": "IL-SOUTHERN ILLINOIS"
+  },
+  {
+    "price_sedan": "3005",
+    "price_suv": "3055",
+    "price_pickup": "3270",
+    "price_motorcycle": "1915",
+    "value": "100",
+    "name": "IL-SPECIALTY DIVISION"
+  },
+  {
+    "price_sedan": "3175",
+    "price_suv": "3225",
+    "price_pickup": "3440",
+    "price_motorcycle": "2125",
+    "value": "103",
+    "name": "IL-ST. LOUIS"
+  },
+  {
+    "price_sedan": "2990",
+    "price_suv": "3040",
+    "price_pickup": "3255",
+    "price_motorcycle": "1900",
+    "value": "104",
+    "name": "IL-WHEELING"
+  },
+  {
+    "price_sedan": "3040",
+    "price_suv": "3090",
+    "price_pickup": "3305",
+    "price_motorcycle": "2090",
+    "value": "112",
+    "name": "IN- IAA Indy Minnesota Street Sublot"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3375",
+    "price_motorcycle": "2160",
+    "value": "105",
+    "name": "IN-CICERO"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3375",
+    "price_motorcycle": "2160",
+    "value": "106",
+    "name": "IN-DYER"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3345",
+    "price_motorcycle": "2160",
+    "value": "107",
+    "name": "IN-FORT WAYNE"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3250",
+    "price_motorcycle": "2055",
+    "value": "108",
+    "name": "IN-HAMMOND"
+  },
+  {
+    "price_sedan": "3005",
+    "price_suv": "3055",
+    "price_pickup": "3160",
+    "price_motorcycle": "1965",
+    "value": "109",
+    "name": "IN-HARTFORD CITY"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3340",
+    "price_motorcycle": "2125",
+    "value": "110",
+    "name": "IN-INDIANAPOLIS"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3340",
+    "price_motorcycle": "2125",
+    "value": "111",
+    "name": "IN-SOUTH BEND"
+  },
+  {
+    "price_sedan": "2985",
+    "price_suv": "3035",
+    "price_pickup": "3345",
+    "price_motorcycle": "2260",
+    "value": "113",
+    "name": "KS-KANSAS CITY"
+  },
+  {
+    "price_sedan": "2785",
+    "price_suv": "2835",
+    "price_pickup": "3145",
+    "price_motorcycle": "2060",
+    "value": "114",
+    "name": "KS-WICHITA"
+  },
+  {
+    "price_sedan": "3145",
+    "price_suv": "3195",
+    "price_pickup": "3410",
+    "price_motorcycle": "2195",
+    "value": "115",
+    "name": "KY-ASHLAND"
+  },
+  {
+    "price_sedan": "3215",
+    "price_suv": "3265",
+    "price_pickup": "3480",
+    "price_motorcycle": "2265",
+    "value": "116",
+    "name": "KY-BOWLING GREEN"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3375",
+    "price_motorcycle": "2160",
+    "value": "117",
+    "name": "KY-LEXINGTON EAST"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3375",
+    "price_motorcycle": "2160",
+    "value": "118",
+    "name": "KY-LEXINGTON WEST"
+  },
+  {
+    "price_sedan": "3150",
+    "price_suv": "3200",
+    "price_pickup": "3410",
+    "price_motorcycle": "2195",
+    "value": "119",
+    "name": "KY-LOUISVILLE"
+  },
+  {
+    "price_sedan": "3355",
+    "price_suv": "3405",
+    "price_pickup": "3620",
+    "price_motorcycle": "2055",
+    "value": "120",
+    "name": "KY-PADUCAH"
+  },
+  {
+    "price_sedan": "3145",
+    "price_suv": "3195",
+    "price_pickup": "3410",
+    "price_motorcycle": "1985",
+    "value": "121",
+    "name": "KY-WALTON"
+  },
+  {
+    "price_sedan": "2680",
+    "price_suv": "2730",
+    "price_pickup": "2935",
+    "price_motorcycle": "1885",
+    "value": "125",
+    "name": "LA- LAFAYETTE"
+  },
+  {
+    "price_sedan": "2715",
+    "price_suv": "2765",
+    "price_pickup": "2965",
+    "price_motorcycle": "1990",
+    "value": "126",
+    "name": "LA- NEW ORLEANS EAST"
+  },
+  {
+    "price_sedan": "2750",
+    "price_suv": "2800",
+    "price_pickup": "3090",
+    "price_motorcycle": "2025",
+    "value": "122",
+    "name": "LA-BATON ROUGE"
+  },
+  {
+    "price_sedan": "2715",
+    "price_suv": "2765",
+    "price_pickup": "3055",
+    "price_motorcycle": "1990",
+    "value": "123",
+    "name": "LA-NEW ORLEANS"
+  },
+  {
+    "price_sedan": "2680",
+    "price_suv": "2730",
+    "price_pickup": "3020",
+    "price_motorcycle": "1850",
+    "value": "124",
+    "name": "LA-SHREVEPORT"
+  },
+  {
+    "price_sedan": "2830",
+    "price_suv": "2880",
+    "price_pickup": "3100",
+    "price_motorcycle": "1880",
+    "value": "127",
+    "name": "MA -TEMPLETON"
+  },
+  {
+    "price_sedan": "2830",
+    "price_suv": "2880",
+    "price_pickup": "3095",
+    "price_motorcycle": "1880",
+    "value": "128",
+    "name": "MA-BOSTON SHIRLEY"
+  },
+  {
+    "price_sedan": "2685",
+    "price_suv": "2735",
+    "price_pickup": "2950",
+    "price_motorcycle": "1985",
+    "value": "129",
+    "name": "MA-FREETOWN"
+  },
+  {
+    "price_sedan": "2830",
+    "price_suv": "2880",
+    "price_pickup": "3095",
+    "price_motorcycle": "1880",
+    "value": "130",
+    "name": "MA-NORTH BOSTON"
+  },
+  {
+    "price_sedan": "2830",
+    "price_suv": "2880",
+    "price_pickup": "3095",
+    "price_motorcycle": "1880",
+    "value": "131",
+    "name": "MA-SOUTH BOSTON"
+  },
+  {
+    "price_sedan": "2830",
+    "price_suv": "2880",
+    "price_pickup": "3095",
+    "price_motorcycle": "1880",
+    "value": "132",
+    "name": "MA-TAUNTON"
+  },
+  {
+    "price_sedan": "2970",
+    "price_suv": "3020",
+    "price_pickup": "3235",
+    "price_motorcycle": "1935",
+    "value": "133",
+    "name": "MA-WEST WARREN"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "139",
+    "name": "MD White Plans Aux Lot"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "134",
+    "name": "MD-BALTIMORE"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "135",
+    "name": "MD-DUNDALK"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "136",
+    "name": "MD-LAUREL"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "137",
+    "name": "MD-METRO DC"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "138",
+    "name": "MD-ROSEDALE"
+  },
+  {
+    "price_sedan": "2755",
+    "price_suv": "2805",
+    "price_pickup": "2980",
+    "price_motorcycle": "1805",
+    "value": "140",
+    "name": "ME- Gray Sub lot"
+  },
+  {
+    "price_sedan": "3045",
+    "price_suv": "3095",
+    "price_pickup": "3310",
+    "price_motorcycle": "2095",
+    "value": "141",
+    "name": "ME-LYMAN"
+  },
+  {
+    "price_sedan": "3180",
+    "price_suv": "3230",
+    "price_pickup": "3585",
+    "price_motorcycle": "1950",
+    "value": "142",
+    "name": "ME-ORONO"
+  },
+  {
+    "price_sedan": "3040",
+    "price_suv": "3090",
+    "price_pickup": "3305",
+    "price_motorcycle": "2090",
+    "value": "143",
+    "name": "ME-PORTLAND GORHAM"
+  },
+  {
+    "price_sedan": "3400",
+    "price_suv": "3450",
+    "price_pickup": "3365",
+    "price_motorcycle": "2450",
+    "value": "144",
+    "name": "MI-DETROIT"
+  },
+  {
+    "price_sedan": "3260",
+    "price_suv": "3310",
+    "price_pickup": "3225",
+    "price_motorcycle": "2310",
+    "value": "145",
+    "name": "MI-FLINT"
+  },
+  {
+    "price_sedan": "3365",
+    "price_suv": "3415",
+    "price_pickup": "3330",
+    "price_motorcycle": "2415",
+    "value": "146",
+    "name": "MI-GRAND RAPIDS"
+  },
+  {
+    "price_sedan": "3265",
+    "price_suv": "3315",
+    "price_pickup": "3370",
+    "price_motorcycle": "2035",
+    "value": "147",
+    "name": "MI-GREAT LAKES"
+  },
+  {
+    "price_sedan": "3225",
+    "price_suv": "3275",
+    "price_pickup": "3300",
+    "price_motorcycle": "2275",
+    "value": "148",
+    "name": "MI-IONIA"
+  },
+  {
+    "price_sedan": "3540",
+    "price_suv": "3590",
+    "price_pickup": "3505",
+    "price_motorcycle": "2590",
+    "value": "149",
+    "name": "MI-KINCHELOE"
+  },
+  {
+    "price_sedan": "3210",
+    "price_suv": "3260",
+    "price_pickup": "3315",
+    "price_motorcycle": "1980",
+    "value": "150",
+    "name": "MI-LANSING"
+  },
+  {
+    "price_sedan": "3250",
+    "price_suv": "3300",
+    "price_pickup": "3515",
+    "price_motorcycle": "2300",
+    "value": "155",
+    "name": "MN- IAA Faribault"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3375",
+    "price_motorcycle": "2160",
+    "value": "151",
+    "name": "MN-Big Lake Sub lot"
+  },
+  {
+    "price_sedan": "3060",
+    "price_suv": "3110",
+    "price_pickup": "3465",
+    "price_motorcycle": "1830",
+    "value": "152",
+    "name": "MN-CRASHEDTOYS EAST BETHEL"
+  },
+  {
+    "price_sedan": "3185",
+    "price_suv": "3235",
+    "price_pickup": "3450",
+    "price_motorcycle": "2235",
+    "value": "153",
+    "name": "MN-Ham lake Sun lot"
+  },
+  {
+    "price_sedan": "3185",
+    "price_suv": "3235",
+    "price_pickup": "3590",
+    "price_motorcycle": "1955",
+    "value": "154",
+    "name": "MN-MINNEAPOLIS"
+  },
+  {
+    "price_sedan": "3185",
+    "price_suv": "3235",
+    "price_pickup": "3450",
+    "price_motorcycle": "2235",
+    "value": "156",
+    "name": "MN-MINNEAPOLIS NORTH"
+  },
+  {
+    "price_sedan": "3285",
+    "price_suv": "3335",
+    "price_pickup": "3550",
+    "price_motorcycle": "2335",
+    "value": "157",
+    "name": "MN-ST. CLOUD"
+  },
+  {
+    "price_sedan": "3250",
+    "price_suv": "3300",
+    "price_pickup": "3515",
+    "price_motorcycle": "2300",
+    "value": "158",
+    "name": "MO-COLUMBIA"
+  },
+  {
+    "price_sedan": "2925",
+    "price_suv": "2975",
+    "price_pickup": "3265",
+    "price_motorcycle": "2200",
+    "value": "159",
+    "name": "MO-SIKESTON"
+  },
+  {
+    "price_sedan": "2995",
+    "price_suv": "3045",
+    "price_pickup": "3265",
+    "price_motorcycle": "2270",
+    "value": "160",
+    "name": "MO-SPRINGFIELD"
+  },
+  {
+    "price_sedan": "3110",
+    "price_suv": "3160",
+    "price_pickup": "3345",
+    "price_motorcycle": "2160",
+    "value": "161",
+    "name": "MO-ST. LOUIS"
+  },
+  {
+    "price_sedan": "2820",
+    "price_suv": "2870",
+    "price_pickup": "3125",
+    "price_motorcycle": "1920",
+    "value": "162",
+    "name": "MS-GRENADA"
+  },
+  {
+    "price_sedan": "2715",
+    "price_suv": "2765",
+    "price_pickup": "3055",
+    "price_motorcycle": "1920",
+    "value": "163",
+    "name": "MS-GULF COAST"
+  },
+  {
+    "price_sedan": "2715",
+    "price_suv": "2765",
+    "price_pickup": "3055",
+    "price_motorcycle": "1990",
+    "value": "164",
+    "name": "MS-JACKSON"
+  },
+  {
+    "price_sedan": "4125",
+    "price_suv": "4175",
+    "price_pickup": "4390",
+    "price_motorcycle": "3175",
+    "value": "165",
+    "name": "MT-BILLINGS"
+  },
+  {
+    "price_sedan": "4045",
+    "price_suv": "4095",
+    "price_pickup": "5985",
+    "price_motorcycle": "3095",
+    "value": "166",
+    "name": "MT-HELENA"
+  },
+  {
+    "price_sedan": "3985",
+    "price_suv": "4035",
+    "price_pickup": "4390",
+    "price_motorcycle": "3035",
+    "value": "167",
+    "name": "MT-MISSOULA"
+  },
+  {
+    "price_sedan": "2615",
+    "price_suv": "2665",
+    "price_pickup": "2880",
+    "price_motorcycle": "1915",
+    "value": "168",
+    "name": "NC-ASHEVILLE"
+  },
+  {
+    "price_sedan": "2615",
+    "price_suv": "2665",
+    "price_pickup": "2880",
+    "price_motorcycle": "1915",
+    "value": "169",
+    "name": "NC-CHARLOTTE"
+  },
+  {
+    "price_sedan": "2755",
+    "price_suv": "2805",
+    "price_pickup": "3060",
+    "price_motorcycle": "2055",
+    "value": "170",
+    "name": "NC-CHINA GROVE"
+  },
+  {
+    "price_sedan": "2650",
+    "price_suv": "2700",
+    "price_pickup": "2915",
+    "price_motorcycle": "1950",
+    "value": "171",
+    "name": "NC-CONCORD"
+  },
+  {
+    "price_sedan": "2615",
+    "price_suv": "2665",
+    "price_pickup": "2880",
+    "price_motorcycle": "1915",
+    "value": "172",
+    "name": "NC-GREENSBORO"
+  },
+  {
+    "price_sedan": "2440",
+    "price_suv": "2490",
+    "price_pickup": "2705",
+    "price_motorcycle": "1740",
+    "value": "173",
+    "name": "NC-LUMBERTON"
+  },
+  {
+    "price_sedan": "2580",
+    "price_suv": "2630",
+    "price_pickup": "2835",
+    "price_motorcycle": "1880",
+    "value": "174",
+    "name": "NC-MEBANE"
+  },
+  {
+    "price_sedan": "2545",
+    "price_suv": "2595",
+    "price_pickup": "2790",
+    "price_motorcycle": "1845",
+    "value": "176",
+    "name": "NC-MOCKSVILLE"
+  },
+  {
+    "price_sedan": "2755",
+    "price_suv": "2805",
+    "price_pickup": "2880",
+    "price_motorcycle": "2055",
+    "value": "175",
+    "name": "NC-RALEIGH"
+  },
+  {
+    "price_sedan": "2510",
+    "price_suv": "2560",
+    "price_pickup": "2775",
+    "price_motorcycle": "1810",
+    "value": "177",
+    "name": "NC-WILMINGTON"
+  },
+  {
+    "price_sedan": "4135",
+    "price_suv": "4185",
+    "price_pickup": "4900",
+    "price_motorcycle": "2865",
+    "value": "178",
+    "name": "ND-BISMARCK"
+  },
+  {
+    "price_sedan": "3735",
+    "price_suv": "3785",
+    "price_pickup": "4100",
+    "price_motorcycle": "2785",
+    "value": "179",
+    "name": "ND-FARGO"
+  },
+  {
+    "price_sedan": "3215",
+    "price_suv": "3265",
+    "price_pickup": "3690",
+    "price_motorcycle": "2265",
+    "value": "180",
+    "name": "NE-LINCOLN"
+  },
+  {
+    "price_sedan": "3425",
+    "price_suv": "3475",
+    "price_pickup": "3690",
+    "price_motorcycle": "2475",
+    "value": "181",
+    "name": "NE-OMAHA"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "2950",
+    "price_motorcycle": "1915",
+    "value": "183",
+    "name": "NH- Salem Sub lot"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3130",
+    "price_motorcycle": "1775",
+    "value": "182",
+    "name": "NH-CANDIA"
+  },
+  {
+    "price_sedan": "2900",
+    "price_suv": "2950",
+    "price_pickup": "3165",
+    "price_motorcycle": "1950",
+    "value": "184",
+    "name": "NH-MANCHESTER"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3130",
+    "price_motorcycle": "1775",
+    "value": "185",
+    "name": "NH-WEBSTER"
+  },
+  {
+    "price_sedan": "2550",
+    "price_suv": "2600",
+    "price_pickup": "2745",
+    "price_motorcycle": "1530",
+    "value": "187",
+    "name": "NJ-AVENEL NEW JERSEY"
+  },
+  {
+    "price_sedan": "2545",
+    "price_suv": "2595",
+    "price_pickup": "2740",
+    "price_motorcycle": "1525",
+    "value": "188",
+    "name": "NJ-CENTRAL NEW JERSEY"
+  },
+  {
+    "price_sedan": "2550",
+    "price_suv": "2600",
+    "price_pickup": "2815",
+    "price_motorcycle": "1600",
+    "value": "189",
+    "name": "NJ-ENGLISHTOWN"
+  },
+  {
+    "price_sedan": "2600",
+    "price_suv": "2650",
+    "price_pickup": "2865",
+    "price_motorcycle": "1650",
+    "value": "190",
+    "name": "NJ-GLASSBORO EAST"
+  },
+  {
+    "price_sedan": "2600",
+    "price_suv": "2650",
+    "price_pickup": "2865",
+    "price_motorcycle": "1650",
+    "value": "191",
+    "name": "NJ-GLASSBORO WEST"
+  },
+  {
+    "price_sedan": "2515",
+    "price_suv": "2565",
+    "price_pickup": "2710",
+    "price_motorcycle": "1495",
+    "value": "192",
+    "name": "NJ-NORTHERN NEW JERSEY"
+  },
+  {
+    "price_sedan": "2555",
+    "price_suv": "2605",
+    "price_pickup": "2740",
+    "price_motorcycle": "1565",
+    "value": "186",
+    "name": "NJ-SAYREVILLE"
+  },
+  {
+    "price_sedan": "2555",
+    "price_suv": "2605",
+    "price_pickup": "2820",
+    "price_motorcycle": "1605",
+    "value": "193",
+    "name": "NJ-SOMERVILLE"
+  },
+  {
+    "price_sedan": "2690",
+    "price_suv": "2740",
+    "price_pickup": "2890",
+    "price_motorcycle": "1740",
+    "value": "194",
+    "name": "NJ-SOUTHERN NEW JERSEY"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2740",
+    "price_motorcycle": "1635",
+    "value": "195",
+    "name": "NJ-TRENTON"
+  },
+  {
+    "price_sedan": "3135",
+    "price_suv": "3185",
+    "price_pickup": "3465",
+    "price_motorcycle": "2030",
+    "value": "196",
+    "name": "NM-ALBUQUERQUE"
+  },
+  {
+    "price_sedan": "3485",
+    "price_suv": "3535",
+    "price_pickup": "5445",
+    "price_motorcycle": "2535",
+    "value": "197",
+    "name": "NV-LAS VEGAS"
+  },
+  {
+    "price_sedan": "3695",
+    "price_suv": "3745",
+    "price_pickup": "5655",
+    "price_motorcycle": "2745",
+    "value": "198",
+    "name": "NV-RENO"
+  },
+  {
+    "price_sedan": "2725",
+    "price_suv": "2775",
+    "price_pickup": "2990",
+    "price_motorcycle": "1775",
+    "value": "199",
+    "name": "NY-ALBANY"
+  },
+  {
+    "price_sedan": "2970",
+    "price_suv": "3020",
+    "price_pickup": "3235",
+    "price_motorcycle": "2020",
+    "value": "200",
+    "name": "NY-BUFFALO"
+  },
+  {
+    "price_sedan": "2690",
+    "price_suv": "2740",
+    "price_pickup": "2955",
+    "price_motorcycle": "1740",
+    "value": "201",
+    "name": "NY-LONG ISLAND"
+  },
+  {
+    "price_sedan": "2655",
+    "price_suv": "2705",
+    "price_pickup": "2920",
+    "price_motorcycle": "1705",
+    "value": "202",
+    "name": "NY-NEWBURGH"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3130",
+    "price_motorcycle": "1915",
+    "value": "203",
+    "name": "NY-ROCHESTER"
+  },
+  {
+    "price_sedan": "2935",
+    "price_suv": "2985",
+    "price_pickup": "3410",
+    "price_motorcycle": "2195",
+    "value": "204",
+    "name": "NY-SYRACUSE"
+  },
+  {
+    "price_sedan": "3005",
+    "price_suv": "3055",
+    "price_pickup": "3270",
+    "price_motorcycle": "2055",
+    "value": "211",
+    "name": "OH- IAAI Stimmel Rd Sub lot"
+  },
+  {
+    "price_sedan": "2965",
+    "price_suv": "3015",
+    "price_pickup": "3230",
+    "price_motorcycle": "2015",
+    "value": "212",
+    "name": "OH- Vermillion North Ford Offsite lot"
+  },
+  {
+    "price_sedan": "2970",
+    "price_suv": "3020",
+    "price_pickup": "3235",
+    "price_motorcycle": "2020",
+    "value": "205",
+    "name": "OH-AKRON CANTON"
+  },
+  {
+    "price_sedan": "2935",
+    "price_suv": "2985",
+    "price_pickup": "3200",
+    "price_motorcycle": "1985",
+    "value": "206",
+    "name": "OH-CINCINNATI"
+  },
+  {
+    "price_sedan": "3040",
+    "price_suv": "3090",
+    "price_pickup": "3305",
+    "price_motorcycle": "2090",
+    "value": "207",
+    "name": "OH-CLEVELAND"
+  },
+  {
+    "price_sedan": "3040",
+    "price_suv": "3090",
+    "price_pickup": "3305",
+    "price_motorcycle": "2090",
+    "value": "208",
+    "name": "OH-CLEVELAND EAST"
+  },
+  {
+    "price_sedan": "3040",
+    "price_suv": "3090",
+    "price_pickup": "3305",
+    "price_motorcycle": "2090",
+    "value": "209",
+    "name": "OH-CLEVELAND WEST"
+  },
+  {
+    "price_sedan": "3005",
+    "price_suv": "3055",
+    "price_pickup": "3270",
+    "price_motorcycle": "2055",
+    "value": "210",
+    "name": "OH-COLUMBUS"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3340",
+    "price_motorcycle": "2125",
+    "value": "213",
+    "name": "OH-DAYTON"
+  },
+  {
+    "price_sedan": "2700",
+    "price_suv": "2750",
+    "price_pickup": "3040",
+    "price_motorcycle": "1835",
+    "value": "214",
+    "name": "OK-OKLAHOMA CITY"
+  },
+  {
+    "price_sedan": "2715",
+    "price_suv": "2765",
+    "price_pickup": "3055",
+    "price_motorcycle": "1990",
+    "value": "215",
+    "name": "OK-TULSA"
+  },
+  {
+    "price_sedan": "3725",
+    "price_suv": "3775",
+    "price_pickup": "5685",
+    "price_motorcycle": "2775",
+    "value": "216",
+    "name": "OR-EUGENE"
+  },
+  {
+    "price_sedan": "3885",
+    "price_suv": "3935",
+    "price_pickup": "5845",
+    "price_motorcycle": "2935",
+    "value": "217",
+    "name": "OR-PORTLAND"
+  },
+  {
+    "price_sedan": "3765",
+    "price_suv": "3815",
+    "price_pickup": "5725",
+    "price_motorcycle": "2815",
+    "value": "219",
+    "name": "OR-PORTLAND NORTH"
+  },
+  {
+    "price_sedan": "3765",
+    "price_suv": "3815",
+    "price_pickup": "5725",
+    "price_motorcycle": "2815",
+    "value": "220",
+    "name": "OR-PORTLAND SOUTH"
+  },
+  {
+    "price_sedan": "3805",
+    "price_suv": "3855",
+    "price_pickup": "5765",
+    "price_motorcycle": "2855",
+    "value": "218",
+    "name": "OR-PORTLAND WEST"
+  },
+  {
+    "price_sedan": "3645",
+    "price_suv": "3695",
+    "price_pickup": "5605",
+    "price_motorcycle": "2695",
+    "value": "221",
+    "name": "OR-WOODBURN"
+  },
+  {
+    "price_sedan": "2900",
+    "price_suv": "2950",
+    "price_pickup": "3165",
+    "price_motorcycle": "1950",
+    "value": "222",
+    "name": "PA-ALTOONA"
+  },
+  {
+    "price_sedan": "2655",
+    "price_suv": "2705",
+    "price_pickup": "2920",
+    "price_motorcycle": "1705",
+    "value": "223",
+    "name": "PA-BRIDGEPORT"
+  },
+  {
+    "price_sedan": "2830",
+    "price_suv": "2880",
+    "price_pickup": "3095",
+    "price_motorcycle": "1880",
+    "value": "224",
+    "name": "PA-CHAMBERSBURG"
+  },
+  {
+    "price_sedan": "3040",
+    "price_suv": "3090",
+    "price_pickup": "3305",
+    "price_motorcycle": "2090",
+    "value": "225",
+    "name": "PA-ERIE"
+  },
+  {
+    "price_sedan": "2725",
+    "price_suv": "2775",
+    "price_pickup": "2990",
+    "price_motorcycle": "1775",
+    "value": "226",
+    "name": "PA-HARRISBURG"
+  },
+  {
+    "price_sedan": "2685",
+    "price_suv": "2735",
+    "price_pickup": "2950",
+    "price_motorcycle": "1735",
+    "value": "227",
+    "name": "PA-PHILADELPHIA"
+  },
+  {
+    "price_sedan": "2685",
+    "price_suv": "2735",
+    "price_pickup": "2950",
+    "price_motorcycle": "1735",
+    "value": "228",
+    "name": "PA-PHILADELPHIA EAST"
+  },
+  {
+    "price_sedan": "3005",
+    "price_suv": "3055",
+    "price_pickup": "3270",
+    "price_motorcycle": "2055",
+    "value": "229",
+    "name": "PA-PITTSBURG"
+  },
+  {
+    "price_sedan": "3005",
+    "price_suv": "3055",
+    "price_pickup": "3270",
+    "price_motorcycle": "2055",
+    "value": "230",
+    "name": "PA-PITTSBURG NORTH"
+  },
+  {
+    "price_sedan": "2970",
+    "price_suv": "3020",
+    "price_pickup": "3235",
+    "price_motorcycle": "2020",
+    "value": "231",
+    "name": "PA-PITTSBURG SOUTH"
+  },
+  {
+    "price_sedan": "2970",
+    "price_suv": "3020",
+    "price_pickup": "3235",
+    "price_motorcycle": "2020",
+    "value": "232",
+    "name": "PA-PITTSBURG WEST"
+  },
+  {
+    "price_sedan": "2760",
+    "price_suv": "2810",
+    "price_pickup": "3025",
+    "price_motorcycle": "1810",
+    "value": "233",
+    "name": "PA-SCRANTON"
+  },
+  {
+    "price_sedan": "2765",
+    "price_suv": "2815",
+    "price_pickup": "3030",
+    "price_motorcycle": "1675",
+    "value": "234",
+    "name": "PA-YORK HAVEN"
+  },
+  {
+    "price_sedan": "2690",
+    "price_suv": "2740",
+    "price_pickup": "2955",
+    "price_motorcycle": "1600",
+    "value": "235",
+    "name": "PA-YORKS SPRINGS"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1705",
+    "value": "236",
+    "name": "RI-EXETER"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3130",
+    "price_motorcycle": "1915",
+    "value": "237",
+    "name": "RI-PROVIDENCE"
+  },
+  {
+    "price_sedan": "2335",
+    "price_suv": "2385",
+    "price_pickup": "2530",
+    "price_motorcycle": "1575",
+    "value": "238",
+    "name": "SC-CHARLESTON"
+  },
+  {
+    "price_sedan": "2405",
+    "price_suv": "2455",
+    "price_pickup": "2670",
+    "price_motorcycle": "1705",
+    "value": "239",
+    "name": "SC-COLUMBIA"
+  },
+  {
+    "price_sedan": "2405",
+    "price_suv": "2455",
+    "price_pickup": "2670",
+    "price_motorcycle": "1705",
+    "value": "240",
+    "name": "SC-GREENVILLE"
+  },
+  {
+    "price_sedan": "2405",
+    "price_suv": "2455",
+    "price_pickup": "2600",
+    "price_motorcycle": "1705",
+    "value": "241",
+    "name": "SC-LEXINGTON"
+  },
+  {
+    "price_sedan": "2440",
+    "price_suv": "2490",
+    "price_pickup": "2705",
+    "price_motorcycle": "1740",
+    "value": "242",
+    "name": "SC-South Gaston Sublot"
+  },
+  {
+    "price_sedan": "2475",
+    "price_suv": "2525",
+    "price_pickup": "2740",
+    "price_motorcycle": "1775",
+    "value": "244",
+    "name": "SC-SPARTANBURG"
+  },
+  {
+    "price_sedan": "2475",
+    "price_suv": "2525",
+    "price_pickup": "2740",
+    "price_motorcycle": "1675",
+    "value": "243",
+    "name": "SC-Spartanburg sublot"
+  },
+  {
+    "price_sedan": "3735",
+    "price_suv": "3785",
+    "price_pickup": "4180",
+    "price_motorcycle": "2305",
+    "value": "245",
+    "name": "SD-SIOUX FALLS"
+  },
+  {
+    "price_sedan": "2655",
+    "price_suv": "2705",
+    "price_pickup": "2920",
+    "price_motorcycle": "1955",
+    "value": "246",
+    "name": "TN-CHATTANOOGA"
+  },
+  {
+    "price_sedan": "2755",
+    "price_suv": "2805",
+    "price_pickup": "3020",
+    "price_motorcycle": "2055",
+    "value": "247",
+    "name": "TN-KNOXVILLE"
+  },
+  {
+    "price_sedan": "2615",
+    "price_suv": "2665",
+    "price_pickup": "2880",
+    "price_motorcycle": "1915",
+    "value": "248",
+    "name": "TN-MEMPHIS"
+  },
+  {
+    "price_sedan": "2615",
+    "price_suv": "2665",
+    "price_pickup": "2880",
+    "price_motorcycle": "1915",
+    "value": "249",
+    "name": "TN-NASHVILLE"
+  },
+  {
+    "price_sedan": "2705",
+    "price_suv": "2755",
+    "price_pickup": "3035",
+    "price_motorcycle": "1790",
+    "value": "250",
+    "name": "TX-ABILENE"
+  },
+  {
+    "price_sedan": "2825",
+    "price_suv": "2875",
+    "price_pickup": "3185",
+    "price_motorcycle": "2100",
+    "value": "251",
+    "name": "TX-AMARILLO"
+  },
+  {
+    "price_sedan": "2785",
+    "price_suv": "2835",
+    "price_pickup": "3145",
+    "price_motorcycle": "1920",
+    "value": "252",
+    "name": "TX-ANDREWS"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "253",
+    "name": "TX-AUSTIN"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "254",
+    "name": "TX-CORPUS CHRISTI"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "255",
+    "name": "TX-CRASHEDTOYS DALLAS"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "256",
+    "name": "TX-DALLAS"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "257",
+    "name": "TX-DALLAS SOUTH"
+  },
+  {
+    "price_sedan": "2785",
+    "price_suv": "2835",
+    "price_pickup": "3065",
+    "price_motorcycle": "1820",
+    "value": "258",
+    "name": "TX-EL PASO"
+  },
+  {
+    "price_sedan": "2665",
+    "price_suv": "2715",
+    "price_pickup": "3025",
+    "price_motorcycle": "1940",
+    "value": "259",
+    "name": "TX-FT. WORTH"
+  },
+  {
+    "price_sedan": "2385",
+    "price_suv": "2435",
+    "price_pickup": "2745",
+    "price_motorcycle": "1660",
+    "value": "260",
+    "name": "TX-HOUSTON"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "261",
+    "name": "TX-LONGVIEW"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3095",
+    "price_motorcycle": "1850",
+    "value": "262",
+    "name": "TX-LUBBOCK"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "263",
+    "name": "TX-LUFKIN"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "264",
+    "name": "TX-MCALLEN"
+  },
+  {
+    "price_sedan": "2705",
+    "price_suv": "2755",
+    "price_pickup": "3065",
+    "price_motorcycle": "1820",
+    "value": "265",
+    "name": "TX-PERMIAN BASIN"
+  },
+  {
+    "price_sedan": "2665",
+    "price_suv": "2715",
+    "price_pickup": "3025",
+    "price_motorcycle": "1940",
+    "value": "266",
+    "name": "TX-SAN ANTONIO"
+  },
+  {
+    "price_sedan": "2585",
+    "price_suv": "2635",
+    "price_pickup": "2945",
+    "price_motorcycle": "1860",
+    "value": "267",
+    "name": "TX-WACO"
+  },
+  {
+    "price_sedan": "3685",
+    "price_suv": "3735",
+    "price_pickup": "5645",
+    "price_motorcycle": "2735",
+    "value": "268",
+    "name": "UT-OGDEN"
+  },
+  {
+    "price_sedan": "3685",
+    "price_suv": "3735",
+    "price_pickup": "5645",
+    "price_motorcycle": "2735",
+    "value": "269",
+    "name": "UT-SALT LAKE CITY"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1705",
+    "value": "270",
+    "name": "VA-CULPEPER"
+  },
+  {
+    "price_sedan": "2935",
+    "price_suv": "2985",
+    "price_pickup": "3200",
+    "price_motorcycle": "1985",
+    "value": "271",
+    "name": "VA-DANVILLE"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "272",
+    "name": "VA-FREDERICKSBURG"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1845",
+    "value": "273",
+    "name": "VA-FREDERICKSBURG-SOUTH"
+  },
+  {
+    "price_sedan": "2900",
+    "price_suv": "2950",
+    "price_pickup": "3165",
+    "price_motorcycle": "1950",
+    "value": "274",
+    "name": "VA-HAMPTON"
+  },
+  {
+    "price_sedan": "2795",
+    "price_suv": "2845",
+    "price_pickup": "3060",
+    "price_motorcycle": "1705",
+    "value": "275",
+    "name": "VA-NORTHERN VIRGINIA"
+  },
+  {
+    "price_sedan": "3040",
+    "price_suv": "3090",
+    "price_pickup": "3305",
+    "price_motorcycle": "2090",
+    "value": "276",
+    "name": "VA-PULASKI"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3130",
+    "price_motorcycle": "1915",
+    "value": "277",
+    "name": "VA-RICHMOND"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3130",
+    "price_motorcycle": "1915",
+    "value": "278",
+    "name": "VA-ROANOKE"
+  },
+  {
+    "price_sedan": "2850",
+    "price_suv": "2900",
+    "price_pickup": "3115",
+    "price_motorcycle": "1760",
+    "value": "279",
+    "name": "VA-SUFFOLK"
+  },
+  {
+    "price_sedan": "2865",
+    "price_suv": "2915",
+    "price_pickup": "3130",
+    "price_motorcycle": "1915",
+    "value": "280",
+    "name": "VA-TIDEWATER"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3340",
+    "price_motorcycle": "2125",
+    "value": "284",
+    "name": "VT- Devil&#039;s Bowl Sub lot"
+  },
+  {
+    "price_sedan": "3145",
+    "price_suv": "3195",
+    "price_pickup": "3410",
+    "price_motorcycle": "2195",
+    "value": "281",
+    "name": "VT-BURLINGTON"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3480",
+    "price_motorcycle": "1845",
+    "value": "282",
+    "name": "VT-FAIR HAVEN"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3480",
+    "price_motorcycle": "1845",
+    "value": "283",
+    "name": "VT-ORLEANS"
+  },
+  {
+    "price_sedan": "3075",
+    "price_suv": "3125",
+    "price_pickup": "3480",
+    "price_motorcycle": "1845",
+    "value": "285",
+    "name": "VT-RUTLAND"
+  },
+  {
+    "price_sedan": "4005",
+    "price_suv": "4055",
+    "price_pickup": "5655",
+    "price_motorcycle": "3055",
+    "value": "289",
+    "name": "WA- Seattle Puyallup"
+  },
+  {
+    "price_sedan": "3885",
+    "price_suv": "3935",
+    "price_pickup": "5845",
+    "price_motorcycle": "2935",
+    "value": "288",
+    "name": "WA-GRAHAM"
+  },
+  {
+    "price_sedan": "3925",
+    "price_suv": "3975",
+    "price_pickup": "5885",
+    "price_motorcycle": "2975",
+    "value": "290",
+    "name": "WA-NORTH SEATTLE"
+  },
+  {
+    "price_sedan": "4045",
+    "price_suv": "4095",
+    "price_pickup": "6005",
+    "price_motorcycle": "3095",
+    "value": "291",
+    "name": "WA-PASCO"
+  },
+  {
+    "price_sedan": "3755",
+    "price_suv": "3805",
+    "price_pickup": "5875",
+    "price_motorcycle": "2485",
+    "value": "286",
+    "name": "WA-SEATTLE"
+  },
+  {
+    "price_sedan": "3805",
+    "price_suv": "3855",
+    "price_pickup": "5765",
+    "price_motorcycle": "2855",
+    "value": "287",
+    "name": "WA-SEATTLE-SOUTH"
+  },
+  {
+    "price_sedan": "4125",
+    "price_suv": "4175",
+    "price_pickup": "6085",
+    "price_motorcycle": "3175",
+    "value": "292",
+    "name": "WA-SPOKANE"
+  },
+  {
+    "price_sedan": "3400",
+    "price_suv": "3450",
+    "price_pickup": "3365",
+    "price_motorcycle": "2450",
+    "value": "293",
+    "name": "WI-APPLETON"
+  },
+  {
+    "price_sedan": "3330",
+    "price_suv": "3380",
+    "price_pickup": "3160",
+    "price_motorcycle": "2265",
+    "value": "294",
+    "name": "WI-MADISON"
+  },
+  {
+    "price_sedan": "3295",
+    "price_suv": "3345",
+    "price_pickup": "3260",
+    "price_motorcycle": "2345",
+    "value": "295",
+    "name": "WI-MILWAUKEE"
+  },
+  {
+    "price_sedan": "3365",
+    "price_suv": "3415",
+    "price_pickup": "3330",
+    "price_motorcycle": "2415",
+    "value": "296",
+    "name": "WI-PORTAGE"
+  },
+  {
+    "price_sedan": "3045",
+    "price_suv": "3095",
+    "price_pickup": "3450",
+    "price_motorcycle": "1815",
+    "value": "297",
+    "name": "WV-BUCKHANNON"
+  },
+  {
+    "price_sedan": "3005",
+    "price_suv": "3055",
+    "price_pickup": "3270",
+    "price_motorcycle": "1915",
+    "value": "298",
+    "name": "WV-CHARLESTON"
+  },
+  {
+    "price_sedan": "3145",
+    "price_suv": "3195",
+    "price_pickup": "3410",
+    "price_motorcycle": "2195",
+    "value": "299",
+    "name": "WV-SHADY SPRING"
+  },
+  {
+    "price_sedan": "4355",
+    "price_suv": "4405",
+    "price_pickup": "4640",
+    "price_motorcycle": "3405",
+    "value": "300",
+    "name": "WY-CAS"
+  },
+  {
+    "price_sedan": "",
+    "price_suv": "",
+    "price_pickup": "",
+    "price_motorcycle": "",
+    "value": "301",
+    "name": "Etc"
+  }
+]

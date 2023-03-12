@@ -8,7 +8,7 @@
       "part1": "TERMS & CONDITIONS",
       "part2": "GET ALL THE SERVICES IN ONE PACKAGE"
     },
-    "": {
+    "content": {
       "car_selection": {
         "icon": "icon-icon_1",
         "header": "Car selection",
@@ -90,23 +90,27 @@
   },
   "calculate": {
     "header": "Administrator settings",
-    "text_content_calculator_EN": {
+    "calculator": {
       "header": "Below calculator allows you to count the auction fee, shipping, insurance and customs clearance according to the 2020 EEC tariffs.",
       "carPrice": "Car Price",
       "Auction": "Auction",
       "other": "other",
+      "highPermeability": "High permeability",
       "selectLocation": "Select Location",
       "ShippingPrice": "Shipping",
       "fuelType": "Fuel Type",
-      "selectFuelType": ["Diesel", "Gasoline", "Full electric"],
-      "Age": "Age",
-      "selectAge": ["up to 3 years", "3 - 5 years", "5 - 7 years", "7 +"],
+      "selectFuelType": ["Diesel", "Gasoline", "Full electric", "Hybrid"],
+      "age": "Age",
+      "selectAge": {
+        "part1": ["up to 3 years", "3 - 5 years", "5 - 7 years", "7 +"],
+        "part2": ["up to 5 years", "5 - 10 years", "10 - 15 years"]
+      },
       "engine": "Engine, cm³",
       "carType": "Vehicle Type",
       "selectCarType": ["Motorcycle", "Sedan", "Pickup", "SUV"],
-      "button": "Calculate"
+      "button": {"send": "Calculate", "clear": "clear"}
     },
-    "text_content_calculatorResult_EN": {
+    "calculatorResult": {
       "carPrice": "Car Price",
       "auctionFee": "Auction Fee",
       "shippingPrice": "Shipping",
@@ -117,6 +121,21 @@
       "ecoTax": "Eco tax",
       "brokerFee": "Broker fee",
       "total": "Total"
+    }
+  },
+  "getCallBack": {
+    "header": "ORDER A CALL",
+    "offer": "If you want our specialist to contact you, leave your details by filling out the form below..",
+    "fullname": "First Name Last Name",
+    "phone": "Tel․*",
+    "totalMoney": "Total budget",
+    "minMoney": "Min.",
+    "maxMoney": "Max.",
+    "carModelMarcaBrand": "Make/Model",
+    "comments": "Notes...",
+    "button": {
+      "attachCalculation": "Attach calculation",
+      "orderACall": "Order a call"
     }
   }
 }

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
+import { useDispatch } from 'react-redux';
 import Calculator from './components/calculator';
 import Home from './components/home';
 import Services from './components/services';
@@ -12,30 +13,39 @@ import Error from './components/error';
 import Goods from './components/goods';
 import ShowProduct from './components/show_product';
 import Layout from './Layout';
+import useHttpRequest from './hook/useHttpRequest/useHttpRequest';
+import { login } from './reducers/authentication';
 
 const App = () => {
-  let definedLanguage;
-  if (navigator.language === 'am') {
-    definedLanguage = '/am';
-  } else if (navigator.language === 'ru') {
-    definedLanguage = '/ru';
-  } else {
-    definedLanguage = '/en';
-  }
+  const { i18n } = useTranslation();
+  const { language } = i18n;
+  const { responsetData, httpRequest } = useHttpRequest();
+  const dispatch = useDispatch();
 
-  const language = localStorage.getItem('check-language') ? localStorage.getItem('check-language') : definedLanguage;
-  const [adminButtonState, setAdminButtonState] = useState(false);
-  const adminButtonAndPage = adminButtonState ? <Authentication /> : <Home />;
+  useEffect(() => {
+    const result = localStorage.getItem('auth');
 
-  if (!localStorage.getItem('check-language')) {
-    localStorage.setItem('check-language', document.location.pathname);
-  }
+    if (result) {
+      const refreshToken = JSON.parse(result);
+      httpRequest('post', '/admin/token', { token: refreshToken.token });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    if (responsetData.data?.accessToken) {
+      httpRequest('get', '/admin/auth', null, ['authorization', `Bearer ${responsetData.data?.accessToken}`]);
+    }
+    if (responsetData.data?.auth) {
+      dispatch(login());
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [responsetData.data]);
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Navigate to={`${language}`} />} />
-        <Route path=':lang' element={<Layout setAdminButtonState={setAdminButtonState} />}>
+        <Route path=':lang' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='aboute_us' element={<AbouteUs />} />
           <Route path='calculate' element={<Calculator />} />
@@ -44,10 +54,10 @@ const App = () => {
           <Route path='our_team' element={<OurTeam />} />
           <Route path='services' element={<Services />} />
           <Route path='order_a_call' element={<GetCallBack />} />
-          <Route path='adm' element={{ adminButtonAndPage }} />
-          <Route path='*' element={<Error />} />
+          <Route path='admin' element={<Authentication />} />
+          <Route path='*' element={<Navigate to='/404' />} />
         </Route>
-        <Route path='*' element={<Error />} />
+        <Route path='/404' element={<Error />} />
       </Routes>
     </BrowserRouter>
   );

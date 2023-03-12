@@ -1,30 +1,14 @@
 import React from 'react';
-import { Button, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { useSelector } from 'react-redux';
 import Fab from '@mui/material/Fab';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import FooterStyle from './FooterStyleStyles';
 import AddSocialNetworktitems from './AddSocialNetworktitems';
 import AddContactitems from './AddContactitems';
 import { data_Contacts, data_social_network } from './address';
-
-const AdminButton = ({ setAdminButtonState, auth }) => {
-  const location = useLocation();
-  const handelClick = () => {
-    setAdminButtonState(true);
-    window.scrollTo({ top: 0 });
-  };
-
-  return location.pathname === '/am/adm' && !auth ? (
-    <Grid item>
-      <Button color='inherit' size='small' onClick={handelClick}>
-        մեր աշխատակազմի համար
-      </Button>
-    </Grid>
-  ) : undefined;
-};
 
 const SocialNetworkItems = () =>
   data_social_network.social_network.map((index) => (
@@ -77,7 +61,8 @@ const ContactItems = ({ language, auth }) => {
   ));
 };
 
-const Footer = ({ setAdminButtonState }) => {
+const Footer = () => {
+  const { t } = useTranslation();
   const auth = useSelector((state) => state.authenticationReducer.value);
 
   return (
@@ -89,7 +74,7 @@ const Footer = ({ setAdminButtonState }) => {
         <Grid item xs={12} sm={6} md={8} p={4}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <Typography>ԿԱՊ</Typography>
+              <Typography>{t('footer.header')}</Typography>
             </Grid>
             <Grid item xs={12}>
               <Grid container spacing={2}>
@@ -111,9 +96,6 @@ const Footer = ({ setAdminButtonState }) => {
                       </Grid>
                     </Grid>
                   </Grid>
-                </Grid>
-                <Grid item xs={12}>
-                  <AdminButton setAdminButtonState={setAdminButtonState} auth={auth} />
                 </Grid>
               </Grid>
             </Grid>

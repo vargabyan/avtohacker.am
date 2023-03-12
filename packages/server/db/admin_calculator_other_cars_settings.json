@@ -1,0 +1,345 @@
+[
+  {
+    "_id": "id_adminCalculatorOtherCarsSettings",
+    "diesel": {
+      "motorcycle": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "6.5"
+          },
+          {
+            "percent": "2",
+            "price": "12"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "sedan": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "pickup": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "suv": {
+        "highPermeability": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      }
+    },
+    "gasoline": {
+      "motorcycle": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "sedan": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "pickup": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "suv": {
+        "highPermeability": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      }
+    },
+    "hybrid": {
+      "motorcycle": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "sedan": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "pickup": {
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "suv": {
+        "highPermeability": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "ageFrom_3": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_3_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_7": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_7_to": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      }
+    }
+  }
+]

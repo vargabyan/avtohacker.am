@@ -1,135 +1,48 @@
-import React from 'react';
-import { Button, Grid, TextField, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import nkar from './images/4.jpg';
+import { useTranslation } from 'react-i18next';
+import GetCallBackStyles from './styledComponent';
+import useCustomizedSnackbars from '../../hook/useSnackbar';
+import FormCallBack from './FormCallBack';
 
-const FormCallBack = () => (
-  <Grid container spacing={1}>
-    <Grid item xs={12}>
-      <TextField
-        fullWidth
-        label='Multiline'
-        multiline
-        variant='filled'
-        size='small'
-        // value={value}
-        // onChange={}
-      />
-    </Grid>
-    <Grid item xs={12}>
-      <TextField
-        fullWidth
-        label='Multiline'
-        multiline
-        variant='filled'
-        size='small'
-        // value={value}
-        // onChange={}
-      />
-    </Grid>
-    <Grid item xs={12}>
-      <TextField
-        fullWidth
-        label='Multiline'
-        multiline
-        variant='filled'
-        size='small'
-        // value={value}
-        // onChange={}
-      />
-    </Grid>
-    <Grid item xs={6}>
-      <TextField
-        fullWidth
-        label='Multiline'
-        multiline
-        size='small'
-        // value={value}
-        // onChange={}
-      />
-    </Grid>
-    <Grid item xs={6}>
-      <TextField
-        fullWidth
-        label='Multiline'
-        multiline
-        size='small'
-        // value={value}
-        // onChange={}
-      />
-    </Grid>
-    <Grid item xs={12}>
-      <TextField
-        fullWidth
-        label='Multiline'
-        multiline
-        variant='filled'
-        size='small'
-        // value={value}
-        // onChange={}
-      />
-    </Grid>
-    <Grid item xs={12}>
-      <TextField
-        fullWidth
-        label='Multiline'
-        multiline
-        variant='filled'
-        size='small'
-        rows={2}
-        // value={value}
-        // onChange={}
-      />
-    </Grid>
-    <Grid item xs={12}>
-      <Button>+ file</Button>
-    </Grid>
-    <Grid item xs={12}>
-      {' '}
-      i'm not robot{' '}
-    </Grid>
-    <Grid item xs={12}>
-      <Button>send</Button>
-    </Grid>
-  </Grid>
-);
+const GetCallBack = ({ home, m }) => {
+  const [snackbarMessage, setSnackbarMessage] = useState({ status: '', message: '' });
+  const { t } = useTranslation();
+  const { snackbars, handleSnackbarsClick } = useCustomizedSnackbars(snackbarMessage.status, snackbarMessage.message);
 
-const GetCallBack = ({ home, m }) => (
-  <Grid container spacing={2} justifyContent='center' mt={m !== undefined ? m : 6} mb={4}>
-    <Grid item xs={12} display={home ? 'block' : 'none'}>
-      <Grid container justifyContent='center' spacing={1}>
-        <Grid item xs={9}>
-          <Typography variant='h4' fontWeight={900}>
-            ՊԱՏՎԻՐԵԼ ԶԱՆԳ
-          </Typography>
+  return (
+    <GetCallBackStyles>
+      <Grid container spacing={2} justifyContent='center' mt={m !== undefined ? m : 2} mb={4}>
+        <Grid item xs={12} display={home ? 'block' : 'none'}>
+          <Grid container justifyContent='center' spacing={1}>
+            <Grid item xs={9}>
+              <Typography variant='h4' fontWeight={900}>
+                {t('getCallBack.header')}
+              </Typography>
+            </Grid>
+            <Grid item xs={9}>
+              <Box width='80px' height='4px' className='redLine' />
+            </Grid>
+            <Grid item xs={9}>
+              <Typography fontWeight={900}>{t('getCallBack.offer')}</Typography>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item xs={9}>
-          <Box width='80px' height='4px' sx={{ background: '#eb1921' }} />
-        </Grid>
-        <Grid item xs={9}>
-          <Typography fontWeight={900}>
-            Եթե ցանկանում եք, որ մասնագետը կապ հաստատի Ձեզ, կարող եք թողնել Ձեր տվյալները՝ լրացնելով հայտը։
-          </Typography>
+        <Grid item xs={11} sm={9}>
+          <Grid container spacing={2}>
+            <Grid item display={{ xs: 'none', md: 'block' }} md={6}>
+              <Box className='headerImg' />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <FormCallBack handleSnackbarsClick={handleSnackbarsClick} setSnackbarMessage={setSnackbarMessage} />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
-    </Grid>
-    <Grid item xs={9}>
-      <Grid container spacing={2}>
-        <Grid item display={{ xs: 'none', md: 'block' }} md={6}>
-          <Box
-            style={{
-              background: `url(${nkar})`,
-              height: '100%',
-              width: '100%',
-            }}
-          />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <FormCallBack />
-        </Grid>
-      </Grid>
-    </Grid>
-  </Grid>
-);
+      {snackbars}
+    </GetCallBackStyles>
+  );
+};
 
 export default GetCallBack;

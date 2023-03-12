@@ -7,7 +7,6 @@ export const LanguageStyle = styled('div')`
 
 export const DrawerAppBarStyle = styled('div')`
   .systemControlBox {
-    height: 28px;
     background: #eb1921;
     color: white;
     text-align: center;
