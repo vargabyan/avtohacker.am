@@ -122,5 +122,20 @@
       "brokerFee": "Broker fee",
       "total": "Total"
     }
+  },
+  "getCallBack": {
+    "header": "ORDER A CALL",
+    "offer": "If you want our specialist to contact you, leave your details by filling out the form below..",
+    "fullname": "First Name Last Name",
+    "phone": "Tel․*",
+    "totalMoney": "Total budget",
+    "minMoney": "Min.",
+    "maxMoney": "Max.",
+    "carModelMarcaBrand": "Make/Model",
+    "comments": "Notes...",
+    "button": {
+      "attachCalculation": "Attach calculation",
+      "orderACall": "Order a call"
+    }
   }
 }

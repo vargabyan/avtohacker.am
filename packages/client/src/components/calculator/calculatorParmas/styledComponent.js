@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const CalculatorParamsStyle = styled('div')`
+const CalculatorParamsStyle = styled('div')`
   max-width: 625px;
   margin: auto;
   margin-top: 20px;
@@ -9,6 +9,8 @@ export const CalculatorParamsStyle = styled('div')`
   .headerText {
     font-size: 12px;
     text-align: center;
+    display: block;
+    padding-bottom: 36px;
   }
 
   .iaaImage {
@@ -40,12 +42,4 @@ export const CalculatorParamsStyle = styled('div')`
   }
 `;
 
-export const CalculatorResultStyle = styled('div')`
-  max-width: 625px;
-  margin: auto;
-  margin-bottom: 50px;
-
-  .css-dsuxgy-MuiTableCell-root {
-    display: flex;
-  }
-`;
+export default CalculatorParamsStyle;

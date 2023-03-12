@@ -1,0 +1,95 @@
+[
+  {
+    "_id": "id_adminCalculatorFullElectricCarsSettings",
+    "full_electric": {
+      "motorcycle": {
+        "ageFrom_5": [
+          {
+            "price": "8500",
+            "percent": "15"
+          },
+          {
+            "percent": "1",
+            "price": "7002005"
+          }
+        ],
+        "age_5_10": [
+          {
+            "price": "100",
+            "percent": "20"
+          },
+          {
+            "price": "500",
+            "percent": "30"
+          }
+        ],
+        "age_10_15": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "sedan": {
+        "ageFrom_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_10": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_10_15": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "pickup": {
+        "ageFrom_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_10": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_10_15": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      },
+      "suv": {
+        "ageFrom_5": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_5_10": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ],
+        "age_10_15": [
+          {
+            "price": "100",
+            "percent": "20"
+          }
+        ]
+      }
+    }
+  }
+]

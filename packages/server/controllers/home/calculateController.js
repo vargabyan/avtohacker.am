@@ -31,17 +31,19 @@ exports.postCalculation = async (request, response) => {
   let percentCustomsDuty;
 
   if (selectFuelType === 'full_electric') {
-    percentCustomsDuty =
-      percentCalculatorFullElectricCars.full_electric[selectCarType][selectAge];
+    percentCustomsDuty = await percentCalculatorFullElectricCars.full_electric[
+      selectCarType
+    ][selectAge][0];
   } else {
-    percentCustomsDuty =
-      percentCalculatorOtherCars[selectFuelType][selectCarType][selectAge];
+    percentCustomsDuty = await percentCalculatorOtherCars[selectFuelType][
+      selectCarType
+    ][selectAge][0];
   }
 
   const auctionCarShippingPrice = auctionPrice + carPrice + shippingPrice;
 
   const customsDuty = Math.round(
-    (auctionCarShippingPrice / 100) * percentCustomsDuty
+    (auctionCarShippingPrice / 100) * percentCustomsDuty.percent
   );
 
   const insurance = Math.round(
@@ -51,7 +53,10 @@ exports.postCalculation = async (request, response) => {
     (auctionCarShippingPrice / 100) * percentCalculatorResult.serviceFee
   );
   const vat = Math.round(
-    (((auctionCarShippingPrice / 100) * 20) / 100) * percentCalculatorResult.vat
+    (((auctionCarShippingPrice / 100) * percentCustomsDuty.percent +
+      auctionCarShippingPrice) /
+      100) *
+      percentCalculatorResult.vat
   );
   const ecoTax = Math.round(
     (auctionCarShippingPrice / 100) * percentCalculatorResult.ecoTax

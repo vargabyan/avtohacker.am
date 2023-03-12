@@ -11,24 +11,24 @@ const adminCalculatorFullElectricCarsSettingsSchema = new Schema(
 
     full_electric: Object({
       motorcycle: Object({
-        ageFrom_5: { type: Array, default: ['100, 20'] },
-        age_5_10: { type: Array, default: ['100, 20'] },
-        age_10_15: { type: Array, default: ['100, 20'] },
+        ageFrom_5: { type: Array, default: { price: '100', percent: '20' } },
+        age_5_10: { type: Array, default: { price: '100', percent: '20' } },
+        age_10_15: { type: Array, default: { price: '100', percent: '20' } },
       }),
       sedan: Object({
-        ageFrom_5: { type: Array, default: ['100, 20'] },
-        age_5_10: { type: Array, default: ['100, 20'] },
-        age_10_15: { type: Array, default: ['100, 20'] },
+        ageFrom_5: { type: Array, default: { price: '100', percent: '20' } },
+        age_5_10: { type: Array, default: { price: '100', percent: '20' } },
+        age_10_15: { type: Array, default: { price: '100', percent: '20' } },
       }),
       pickup: Object({
-        ageFrom_5: { type: Array, default: ['100, 20'] },
-        age_5_10: { type: Array, default: ['100, 20'] },
-        age_10_15: { type: Array, default: ['100, 20'] },
+        ageFrom_5: { type: Array, default: { price: '100', percent: '20' } },
+        age_5_10: { type: Array, default: { price: '100', percent: '20' } },
+        age_10_15: { type: Array, default: { price: '100', percent: '20' } },
       }),
       suv: Object({
-        ageFrom_5: { type: Array, default: ['100, 20'] },
-        age_5_10: { type: Array, default: ['100, 20'] },
-        age_10_15: { type: Array, default: ['100, 20'] },
+        ageFrom_5: { type: Array, default: { price: '100', percent: '20' } },
+        age_5_10: { type: Array, default: { price: '100', percent: '20' } },
+        age_10_15: { type: Array, default: { price: '100', percent: '20' } },
       }),
     }),
   },

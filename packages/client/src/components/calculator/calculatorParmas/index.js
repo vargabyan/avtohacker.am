@@ -17,7 +17,7 @@ import { useTranslation } from 'react-i18next';
 import koreanImage from '../images/korean.png';
 import copartImage from '../images/coopart.png';
 import iaaImage from '../images/Iaa.png';
-import { CalculatorParamsStyle } from './styledComponent';
+import CalculatorParamsStyle from './StyledComponent';
 import useHttpRequest from '../../../hook/useHttpRequest/useHttpRequest';
 import useCustomizedSnackbars from '../../../hook/useSnackbar';
 import SelectAgeMenu from './SelectAgeMenu';
@@ -56,13 +56,14 @@ const initialValues = {
 
 const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
   const [selectAuction, setSelectAuction] = useState('');
+  const [selectAfeClear, setSelectAfeClear] = useState(false);
   const [selectAuctionPrice, setSelectAuctionPrice] = useState({ iaa: '0', copart: '0', korea: '0' });
   const [selectLocation, setSelectLocation] = useState([]);
   const [autocompleteState, setAutocompleteState] = useState('');
   const [auctionPlacesAndDeliveryPricesState, setAuctionPlacesAndDeliveryPricesState] = useState({});
-  const { snackbars, handleSnackbarsClick } = useCustomizedSnackbars('warning', 'Լրացրեք բոլոր բաց թողնված վանդակները');
   const { responsetData, httpRequest } = useHttpRequest();
   const { t } = useTranslation();
+  const { snackbars, handleSnackbarsClick } = useCustomizedSnackbars('warning', t('calculate.calculator.snackbar'));
 
   const formik = useFormik({
     initialValues,
@@ -88,28 +89,34 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
   const handleChange = (e) => {
     const { value } = e.target;
 
-    formik.setValues((values) => ({ ...values, selectCarType: value }));
+    formik.setValues((values) => {
+      const newData = {
+        selectCarType: value,
+        shippingPrice: auctionPlacesAndDeliveryPricesState?.[`price_${value}`]
+          ? auctionPlacesAndDeliveryPricesState[`price_${value}`]
+          : '',
+      };
 
-    if (auctionPlacesAndDeliveryPricesState?.[`price_${value}`]) {
-      formik.setValues((values) => ({
-        ...values,
-        shippingPrice: auctionPlacesAndDeliveryPricesState[`price_${value}`],
-      }));
-    }
+      return { ...values, ...newData };
+    });
   };
 
   const handelChoicePlace = (_e, value) => {
     setAutocompleteState(value);
-    formik.setValues((values) => ({ ...values, shippingPrice: '' }));
+    // formik.setValues((values) => ({ ...values, shippingPrice: '' }));
 
     if (value) {
       selectLocation.forEach((element) => {
         if (element.name === value) {
           setAuctionPlacesAndDeliveryPricesState(element);
 
-          if (selectCarType) {
-            formik.setValues((values) => ({ ...values, shippingPrice: element[`price_${selectCarType}`] }));
-          }
+          formik.setValues((values) => {
+            const newData = {
+              shippingPrice: selectCarType ? element[`price_${selectCarType}`] : '',
+            };
+
+            return { ...values, ...newData };
+          });
         }
       });
     }
@@ -125,6 +132,7 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
     formik.resetForm();
     setSelectAuction('');
     setAutocompleteState('');
+    setSelectAfeClear((value) => !value);
   };
 
   useEffect(() => {
@@ -152,7 +160,7 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
             <form onSubmit={formik.handleSubmit}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
-                  <Typography variant='p' color='primary' className='headerText'>
+                  <Typography variant='caption' color='primary' className='headerText'>
                     {t('calculate.calculator.header')}
                   </Typography>
                 </Grid>
@@ -255,7 +263,7 @@ const CalculatorParmas = ({ setDataForCalculatorResultsState }) => {
                       </FormControl>
                     </Grid>
                     <Grid item xs={12}>
-                      <SelectAgeMenu formik={formik} />
+                      <SelectAgeMenu formik={formik} selectAfeClear={selectAfeClear} />
                     </Grid>
                     <Grid item xs={12}>
                       <TextField

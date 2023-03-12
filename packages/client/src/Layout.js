@@ -11,7 +11,7 @@ const Layout = () => {
   const { lang } = useParams();
 
   useEffect(() => {
-    window.scrollTo({ top: '0px' });
+    window.scrollTo({ top: 0 });
   }, [location]);
 
   if (!supportLanguage.includes(lang)) {

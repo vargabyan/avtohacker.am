@@ -4,6 +4,7 @@ import '@egjs/react-flicking/dist/flicking.css';
 import '@egjs/react-flicking/dist/flicking-inline.css';
 import { Perspective } from '@egjs/flicking-plugins';
 import { Grid, Typography, Box } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import { ShowcaseStyle, GoodsImageStyle } from './indexStyle';
 import car_1 from './images/1.jpeg';
 import car_2 from './images/2.png';
@@ -22,6 +23,7 @@ const goods = car.map((element, index) => (
 ));
 
 const Showcase = () => {
+  const { t } = useTranslation();
   const plugins = [new Perspective({ rotate: 0.3 })];
 
   return (
@@ -35,7 +37,7 @@ const Showcase = () => {
             <Grid item>
               <Box color='white' border='solid 1px white' borderRadius='5px' marginTop='-10px'>
                 <Typography padding='8px' textAlign='center' fontWeight={900}>
-                  Արկա մեքենաներ եվ հատուկ առաջարկներ
+                  {t('showcase.header')}
                 </Typography>
               </Box>
             </Grid>

@@ -1,29 +1,20 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material';
 import { Box } from '@mui/system';
 import { useTranslation } from 'react-i18next';
-import { CalculatorResultStyle } from './styledComponent';
+import { CalculatorResultStyle } from './StyledComponent';
 
 const CalculatorResults = ({ dataForCalculatorResultsState }) => {
-  // const {
-  //   carPrice,
-  //   auctionFee,
-  //   shippingPrice,
-  //   Insurance,
-  //   serviceFee,
-  //   customsDuty,
-  //   vat,
-  //   ecoTax,
-  //   brokerFee,
-  //   totalAmd,
-  //   totalUsd,
-  // } = dataForCalculatorResultsState;
   const { t } = useTranslation();
-  t();
+
+  useEffect(() => {
+    if (dataForCalculatorResultsState) {
+      window.scrollTo({ top: 380 });
+    }
+  }, [dataForCalculatorResultsState]);
 
   return (
     <CalculatorResultStyle>
@@ -34,71 +25,36 @@ const CalculatorResults = ({ dataForCalculatorResultsState }) => {
               <TableBody>
                 <TableRow key='carPrice'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'red',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Մեքենայի Արժեք
+                    <Box className='redBox' />
+                    {t('calculate.calculatorResult.carPrice')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.carPrice}</TableCell>
                 </TableRow>
                 <TableRow key='serviceFee'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'red',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Միջնորդավճար
+                    <Box className='redBox' />
+                    {t('calculate.calculatorResult.serviceFee')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.serviceFee}</TableCell>
                 </TableRow>
                 <TableRow key='auctionFee'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'orange',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Աճուրդի միջնորդավճար
+                    <Box className='orangeBox' />
+                    {t('calculate.calculatorResult.auctionFee')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.auctionFee}</TableCell>
                 </TableRow>
                 <TableRow key='shippingPrice'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'orange',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Տեղափոխման վճար
+                    <Box className='orangeBox' />
+                    {t('calculate.calculatorResult.shippingPrice')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.shippingPrice}</TableCell>
                 </TableRow>
                 <TableRow key='insurance'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'orange',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Ապահովագրություն
+                    <Box className='orangeBox' />
+                    {t('calculate.calculatorResult.insurance')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.insurance}</TableCell>
                 </TableRow>
@@ -112,57 +68,29 @@ const CalculatorResults = ({ dataForCalculatorResultsState }) => {
               <TableBody>
                 <TableRow key='customsDuty'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'yellow',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Մաքսատուրք
+                    <Box className='yellowBox' />
+                    {t('calculate.calculatorResult.customsDuty')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.customsDuty}</TableCell>
                 </TableRow>
                 <TableRow key='vat'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'yellow',
-                        marginRight: '5px',
-                      }}
-                    />
-                    ԱԱՀ
+                    <Box className='yellowBox' />
+                    {t('calculate.calculatorResult.vat')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.vat}</TableCell>
                 </TableRow>
                 <TableRow key='ecoTax'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'yellow',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Բնապահպանական հարկ
+                    <Box className='yellowBox' />
+                    {t('calculate.calculatorResult.ecoTax')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.ecoTax}</TableCell>
                 </TableRow>
                 <TableRow key='brokerFee'>
                   <TableCell>
-                    <Box
-                      sx={{
-                        width: '5px',
-                        height: '20px',
-                        background: 'yellow',
-                        marginRight: '5px',
-                      }}
-                    />
-                    Բրոքերական ծառայություն
+                    <Box className='yellowBox' />
+                    {t('calculate.calculatorResult.brokerFee')}
                   </TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.brokerFee}</TableCell>
                 </TableRow>
@@ -175,7 +103,7 @@ const CalculatorResults = ({ dataForCalculatorResultsState }) => {
             <Table size='small'>
               <TableBody>
                 <TableRow key='total'>
-                  <TableCell>Ընդհանուր</TableCell>
+                  <TableCell>{t('calculate.calculatorResult.total')}</TableCell>
                   <TableCell align='center'>{dataForCalculatorResultsState?.totalAmd}դ</TableCell>
                   <TableCell align='right'>{dataForCalculatorResultsState?.totalUsd}$</TableCell>
                 </TableRow>
@@ -191,35 +119,21 @@ const CalculatorResults = ({ dataForCalculatorResultsState }) => {
                   <TableCell>
                     <Grid container spacing={1}>
                       <Grid item xs={2}>
-                        <Box
-                          sx={{
-                            width: '10px',
-                            height: '55px',
-                            background: 'red',
-                          }}
-                        />
+                        <Box className='redReminderBox' />
                       </Grid>
                       <Grid item xs={10}>
-                        <Box sx={{ fontSize: '10px' }}>
-                          Ենթակա է վճարման մեքենան գնելուց հետո 1(մեկ) աշխատանքային օրվա ընթացքում
-                        </Box>
+                        <Box fontSize='10px'>{t('calculate.calculatorResult.reminder.part1')}</Box>
                       </Grid>
                     </Grid>
                   </TableCell>
                   <TableCell align='center'>
                     <Grid container spacing={1}>
                       <Grid item xs={2}>
-                        <Box
-                          sx={{
-                            width: '10px',
-                            height: '55px',
-                            background: 'orange',
-                          }}
-                        />
+                        <Box className='orangeReminderBox' />
                       </Grid>
                       <Grid item xs={10}>
-                        <Box sx={{ fontSize: '10px', textAlign: 'start' }}>
-                          Պայմանագրի կնքմանը հաջորդող 45(քառասունհինգ) օրվա ընթացքում
+                        <Box fontSize='10px' textAlign='start'>
+                          {t('calculate.calculatorResult.reminder.part2')}
                         </Box>
                       </Grid>
                     </Grid>
@@ -227,17 +141,11 @@ const CalculatorResults = ({ dataForCalculatorResultsState }) => {
                   <TableCell align='right'>
                     <Grid container spacing={1}>
                       <Grid item xs={2}>
-                        <Box
-                          sx={{
-                            width: '10px',
-                            height: '55px',
-                            background: 'yellow',
-                          }}
-                        />
+                        <Box className='yellowReminderBox' />
                       </Grid>
                       <Grid item xs={10}>
-                        <Box sx={{ fontSize: '10px', textAlign: 'start' }}>
-                          Ավտոﬔքենայի ներմուծման վերաբերյալ ծանուցումը ստանալուց հետո 3 (երեք) օրվա ընթացքում
+                        <Box fontSize='10px' textAlign='start'>
+                          {t('calculate.calculatorResult.reminder.part3')}
                         </Box>
                       </Grid>
                     </Grid>
@@ -250,14 +158,10 @@ const CalculatorResults = ({ dataForCalculatorResultsState }) => {
         <Grid item xs={12}>
           <Grid container justifyContent='center' spacing={2}>
             <Grid item>
-              <Button variant='contained' sx={{ background: '#eb1921' }}>
-                download
-              </Button>
+              <Button variant='contained'>{t('calculate.calculatorResult.button.download')}</Button>
             </Grid>
             <Grid item>
-              <Button variant='contained' sx={{ background: '#eb1921' }}>
-                sent to email
-              </Button>
+              <Button variant='contained'>{t('calculate.calculatorResult.button.sendToMail')}</Button>
             </Grid>
           </Grid>
         </Grid>

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Grid, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import CalculatorStyle from './styledComponent';
+import { CalculatorStyle } from './StyledComponent';
 import AdministratorSettingsCalculate from './administratorSettingsCalculate';
-import CalculatorParmas from './calculatorParmas/CalculatorParmas';
-import CalculatorResults from './calculatorParmas/CalculatorResults';
+import CalculatorParmas from './calculatorParmas';
+import CalculatorResults from './CalculatorResults';
 
 const Calculator = () => {
   const auth = useSelector((state) => state.authenticationReducer.value);
@@ -24,7 +24,7 @@ const Calculator = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={10} lg={12}>
+            <Grid item xs={12}>
               <AdministratorSettingsCalculate />
             </Grid>
           </Grid>

@@ -5,11 +5,10 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useTranslation } from 'react-i18next';
 
-const SelectAgeMenu = ({ formik }) => {
+const SelectAgeMenu = ({ formik, selectAfeClear }) => {
   const [selectAge, setSelectAge] = useState('');
   const { selectFuelType } = formik.values;
-  // const hasSelectAge1 = selectAge === '-3' || selectAge === '3-5' || selectAge === '5-7' || selectAge === '7+';
-  // const hasSelectAge2 = selectAge === '-5' || selectAge === '5-10' || selectAge === '10-15';
+
   const { t } = useTranslation();
 
   const handleChange = (e, children) => {
@@ -20,11 +19,14 @@ const SelectAgeMenu = ({ formik }) => {
     formik.setValues((values) => ({ ...values, selectAge: key.slice(2) }));
   };
 
+  useEffect(() => {
+    if (selectAfeClear) {
+      setSelectAge('');
+    }
+  }, [selectAfeClear]);
+
   let menuItemItems;
   if (selectFuelType === 'full_electric') {
-    // if (hasSelectAge1 && selectFuelType === 'full_electric') {
-    //   formik.setValues((values) => ({ ...values, selectAge: '' }));
-    // }
     menuItemItems = [
       <MenuItem key='ageFrom_5' value='-5'>
         {t('calculate.calculator.selectAge.part2.0')}
@@ -37,9 +39,6 @@ const SelectAgeMenu = ({ formik }) => {
       </MenuItem>,
     ];
   } else {
-    // if (hasSelectAge2 && selectFuelType !== 'Full_electric') {
-    //   formik.setValues((values) => ({ ...values, selectAge: '' }));
-    // }
     menuItemItems = [
       <MenuItem key='ageFrom_3' value='-3'>
         {t('calculate.calculator.selectAge.part1.0')}
@@ -55,16 +54,6 @@ const SelectAgeMenu = ({ formik }) => {
       </MenuItem>,
     ];
   }
-
-  useEffect(() => {
-    // if (hasSelectAge1 && selectFuelType === 'full_electric') {
-    //   formik.setValues((values) => ({ ...values, selectAge: '' }));
-    // }
-    // if (hasSelectAge2 && selectFuelType !== 'full_electric') {
-    // formik.setValues((values) => ({ ...values, selectAge: '' }));
-    // }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [formik]);
 
   return (
     <FormControl fullWidth>

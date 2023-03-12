@@ -4,6 +4,7 @@ import { Box } from '@mui/system';
 import { useSelector } from 'react-redux';
 import Fab from '@mui/material/Fab';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { useTranslation } from 'react-i18next';
 import FooterStyle from './FooterStyleStyles';
 import AddSocialNetworktitems from './AddSocialNetworktitems';
 import AddContactitems from './AddContactitems';
@@ -61,6 +62,7 @@ const ContactItems = ({ language, auth }) => {
 };
 
 const Footer = () => {
+  const { t } = useTranslation();
   const auth = useSelector((state) => state.authenticationReducer.value);
 
   return (
@@ -72,7 +74,7 @@ const Footer = () => {
         <Grid item xs={12} sm={6} md={8} p={4}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <Typography>ԿԱՊ</Typography>
+              <Typography>{t('footer.header')}</Typography>
             </Grid>
             <Grid item xs={12}>
               <Grid container spacing={2}>
